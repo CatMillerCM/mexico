@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <nav className="">
-          <h1 className="">Example Site</h1>
-          <Link href={`/`}>Home</Link>
+          <Link href={`/`}></Link>
+          <Link href={`/home`}>Home</Link>
           <Link href={`/about`}>About</Link>
           <Link href={`/content`}>Content</Link>
           <Link href={`/contact`}>Contact</Link>

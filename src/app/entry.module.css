@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30%;
+  margin-top: 20vh;
 }
 
 .globe {
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .logo > * {
@@ -34,6 +34,21 @@
   font-size: 20px;
 }
 
+
+.planeImg {
+  height: 100px;
+}
+
+.planeTrail {
+  
+}
+
+.fly {
+  animation: movePlane 1.25s linear forwards;
+  offset-path: path("M50,80 C100,80 150,60 250,40 C350,10 450,40 550,50");
+  offset-distance: 0;
+}
+
 .button {
   border-radius: 40%;
   padding: 1rem;
@@ -41,28 +56,7 @@
   color: white;
   background-color: cadetblue;
   z-index: 2;
-}
-
-.plane > * {
-  top: 60%;
-  left: 38%;
-  position: absolute;
-}
-
-.planeTrail {
-  height: 400px;
-}
-
-.planeImg {
-  width: 100px;
-  top: 63%;
-}
-
-.fly {
-  animation: movePlane 1.25s linear forwards;
-  offset-path: path("M50,80 C100,80 150,60 250,40 C350,10 450,40 550,50");
-  offset-distance: 0;
-  top: 60%;
+  cursor: pointer;
 }
 
 @keyframes movePlane {

@@ -1,25 +1,18 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Control Center",
-  description: "Advert Control across all sites",
+  title: "What's my country code?",
+  description: "A fun portfolio of coding projects inspired by countries I visit on my travels",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="">
-          <Link href={`/`}></Link>
-          <Link href={`/home`}>Home</Link>
-          <Link href={`/about`}>About</Link>
-          <Link href={`/content`}>Content</Link>
-          <Link href={`/contact`}>Contact</Link>
-        </nav>
+        <nav />
         {children}
       </body>
     </html>

@@ -1,8 +1,13 @@
+import { Header } from '@/components/organisms/header';
+import styles from './contact.module.css';
+
 const Page = () => {
   return (
-    <main className="contact">
-      <h2 className="">Contact</h2>
-      <p>You can contact us on example@site.com.</p>
+    <main className={styles.contact}>
+      <Header />
+      <div>
+        <p>CONTACT</p>
+      </div>
     </main>
   );
 };

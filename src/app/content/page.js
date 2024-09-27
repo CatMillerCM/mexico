@@ -1,13 +1,13 @@
-import Link from 'next/link';
+import { Header } from '@/components/organisms/header';
+import styles from './content.module.css';
 
 const Page = () => {
   return (
-    <main className="content">
-      <h2 className="">Content</h2>
-      <h3>Here is some key content.</h3>
-      <Link href={`/content/example-1`}>Example 1</Link>
-      <Link href={`/content/example-2`}>Example 2</Link>
-      <Link href={`/content/example-3`}>Example 3</Link>
+    <main className={styles.content}>
+      <Header />
+      <div>
+        <p>CONTENT</p>
+      </div>
     </main>
   );
 };

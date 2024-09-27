@@ -1,8 +1,13 @@
+import { Header } from '@/components/organisms/header';
+import styles from './about.module.css';
+
 const Page = () => {
   return (
-    <main className="about">
-      <h2 className="">About</h2>
-      <p>This is an example nextjs site.</p>
+    <main className={styles.about}>
+      <Header />
+      <div>
+        <p>ABOUT</p>
+      </div>
     </main>
   );
 };

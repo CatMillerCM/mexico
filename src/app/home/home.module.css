@@ -1,0 +1,38 @@
+.location {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.countryTicker {
+  overflow: hidden;
+  max-height: 3rem;
+  font-size: 1.5rem;
+}
+
+.countryList {
+  animation: scrollCountries 4s ease-in-out forwards;
+}
+
+.countryList p:last-child {
+  animation: pop 1s ease-in-out forwards 4s;
+  transform-origin: left;
+  text-shadow: 0 0 0.75rem orange; 
+}
+
+@keyframes scrollCountries {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% + 1rem));
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}

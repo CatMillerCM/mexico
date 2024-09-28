@@ -1,3 +1,8 @@
 const currentCountry = 'Mexico';
 
-export { currentCountry };
+const visitedCountries = [
+  'mexico',
+  'brazil'
+]
+
+export { currentCountry, visitedCountries };

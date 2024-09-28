@@ -1,4 +1,4 @@
-import { countries } from '@/data/countries';
+import { countriesList } from '@/data';
 import { currentCountry } from '@/app/config';
 import styles from './country-ticker.module.css';
 
@@ -8,7 +8,7 @@ const CountryTicker = () => {
 
     while (arr.length < quantity) {
       const index = Math.floor(Math.random() * max);
-      const country = countries[index];
+      const country = countriesList[index];
       if (!arr.includes(country) && country !== currentCountry) {
         arr.push(country);
       }
@@ -18,7 +18,7 @@ const CountryTicker = () => {
   }
 
   const countryTicker = () => {
-    const randomCountries = getRandomCountries(countries.length - 1, 25);
+    const randomCountries = getRandomCountries(countriesList.length - 1, 25);
     randomCountries.push(currentCountry);
 
     return randomCountries;

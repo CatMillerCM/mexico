@@ -1,4 +1,5 @@
 import { Header } from '@/components/organisms/header';
+import { Carousel } from '@/components/organisms/carousel';
 import styles from './home.module.css';
 
 const Page = () => {
@@ -10,6 +11,7 @@ const Page = () => {
       <div>
         <p>HOME</p>
       </div>
+      <Carousel />
     </main>
   );
 };

@@ -1,3 +1,3 @@
-import { countries } from './countries';
+import { countriesList } from './countries-list';
 
-export { countries };
+export { countriesList };

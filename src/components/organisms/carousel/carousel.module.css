@@ -1,0 +1,37 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+
+.centerCard {
+  transform: translateX(0);
+  z-index: 3;
+  opacity: 1;
+}
+
+.leftCard {
+  transform: translateX(-250px) scale(0.8) rotate(-10deg) translateY(20px);
+  z-index: 2;
+}
+
+.rightCard {
+  transform: translateX(250px) scale(0.8) rotate(10deg) translateY(20px);
+  z-index: 2;
+}
+
+.farLeftCard {
+  transform: translateX(-425px) scale(0.6) rotate(-15deg) translateY(40px); 
+  z-index: 1;
+}
+
+.farRightCard {
+  transform: translateX(425px) scale(0.6) rotate(15deg) translateY(40px);
+  z-index: 1;
+}

@@ -15,6 +15,7 @@ const Card = ({ countryName }) => {
         />
       </div>
       <h2 className={styles.title}>{countryName}</h2>
+      {countryName !== 'united kingdom' && <p className={styles.comingSoon}>Coming soon!</p>}
       <div className={styles.turnUp}></div>
     </div >
   )

@@ -31,7 +31,7 @@ const Carousel = ({ countries }) => {
           key={countryName}
           onClick={() => handleClick(index)}
         >
-          <Card countryName={countryName} />
+          <Card countryName={countryName} isCentreCard={index === currentIndex} />
         </div>
       ))}
     </div>

@@ -1,13 +1,31 @@
-.card {
+.cardContainer {
   height: 40rem;
   width: 25rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.frontCard, .backCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 10px;
+  overflow: hidden;
   background-color: black;
 }
 
-.image {
+.frontCard {
+  transform: rotateY(0deg);
+}
+
+.frontImage {
   position: relative;
   height: 100%;
   width: 100%;
@@ -15,7 +33,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0% 100%);
 }
 
-.title, .comingSoon {
+.frontTitle, .comingSoon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,4 +62,66 @@
   border-left: 40px solid cadetblue;
   z-index: 2;
   border-radius: 10px 0 0;
+}
+
+.backCard {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslategrey;
+  cursor: pointer;
+  color: white;
+}
+
+.backTitle {
+  text-transform: capitalize;
+  margin: 4rem 0 0;
+}
+
+.projectTitle {
+  margin: 0 0 2rem;
+}
+
+.backImage {
+  width: 80%;
+  height: 50%;
+  position: relative;
+}
+
+.summary {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.readMore {
+  text-decoration: underline;
+  margin: 0 0 2rem;
+}
+
+.isFlipped .frontCard {
+  transform: rotateY(-180deg);
+}
+
+.isFlipped .backCard {
+  transform: rotateY(0deg);
+}
+
+@media (min-width: 769px) {
+  .cardContainer:hover .frontCard {
+    transform: rotateY(-180deg);
+  }
+
+  .cardContainer:hover .backCard {
+    transform: rotateY(0deg);
+  }
+
+  .isFlipped .frontCard {
+    transform: none;
+  }
+  
+  .isFlipped .backCard {
+    transform: none;
+  }
 }

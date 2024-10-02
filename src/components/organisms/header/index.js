@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Location } from '@/components/molecules/location';
-import { Nav } from '@/components/molecules/nav';
 import styles from './header.module.css';
 
 const Header = ({ isCountriesAnimated }) => {
@@ -10,7 +9,6 @@ const Header = ({ isCountriesAnimated }) => {
       <Location
         isCountriesAnimated={isCountriesAnimated}
       />
-      <Nav />
     </div>
   )
 };

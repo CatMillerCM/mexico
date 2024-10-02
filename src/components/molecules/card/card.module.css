@@ -109,6 +109,14 @@
 }
 
 @media (min-width: 769px) {
+  .isFlipped .frontCard {
+    transform: none;
+  }
+  
+  .isFlipped .backCard {
+    transform: none;
+  }
+
   .cardContainer:hover .frontCard {
     transform: rotateY(-180deg);
   }
@@ -117,11 +125,4 @@
     transform: rotateY(0deg);
   }
 
-  .isFlipped .frontCard {
-    transform: none;
-  }
-  
-  .isFlipped .backCard {
-    transform: none;
-  }
 }

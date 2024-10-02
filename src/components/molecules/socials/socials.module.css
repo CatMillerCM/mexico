@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.socials * {
+  width: 2rem;
+  height: 2rem;
+}

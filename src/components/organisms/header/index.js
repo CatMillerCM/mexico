@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Location } from '@/components/molecules/location';
+import { Socials } from '@/components/molecules/socials';
 import styles from './header.module.css';
 
 const Header = ({ isCountriesAnimated }) => {
@@ -9,6 +10,7 @@ const Header = ({ isCountriesAnimated }) => {
       <Location
         isCountriesAnimated={isCountriesAnimated}
       />
+      <Socials/>
     </div>
   )
 };

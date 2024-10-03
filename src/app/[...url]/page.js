@@ -1,9 +1,12 @@
 import { Nav } from '@/components/atoms/nav';
 import { Header } from '@/components/organisms/header';
 import { Blog } from '@/components/organisms/blog';
+import { projects } from '@/data/projects';
 import styles from './project-page.module.css';
 
 const Page = ({ params: { url } }) => {
+  const countryName = url[0].replace(/-/g, ' ');
+
   return (
     <main>
       <Header />
@@ -11,7 +14,8 @@ const Page = ({ params: { url } }) => {
         pageName="home"
       />
       <Blog 
-        countryName={url[0].replace(/-/g, ' ')}
+        countryName={countryName}
+        project={projects[countryName]}
       />
     </main>
   );

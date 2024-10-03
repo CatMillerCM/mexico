@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { githubIcon, instagramIcon, linkedInIcon } from '@/data/social-icons';
+import { githubIcon, instagramIcon, linkedInIcon } from '@/data/assets/social-icons';
 import styles from './socials.module.css';
 
 const Socials = () => {

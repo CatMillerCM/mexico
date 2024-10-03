@@ -9,18 +9,19 @@
   flex-direction: column;
   gap: 1rem;
   text-align: center;
-  animation: scrollCountries 4s ease-in-out forwards;
+  animation: scroll-countries 2.5s ease-in-out forwards;
 }
 
 .countryList p:last-child {
-  animation: pop 1s ease-in-out forwards 4s;
+  animation: pop 1s ease-in-out forwards 2.5s;
   text-shadow: 0 0 0.75rem orange; 
 }
 
-@keyframes scrollCountries {
+@keyframes scroll-countries {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(calc(-100% + 2rem));
   }
@@ -30,6 +31,7 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.5);
   }

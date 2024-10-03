@@ -7,6 +7,7 @@ const Page = () => {
   return (
     <main>
       <Header
+        isHomeOrAboutPage
         isCountriesAnimated
       />
       <Nav

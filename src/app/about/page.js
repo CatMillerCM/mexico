@@ -5,7 +5,9 @@ import styles from './about.module.css';
 const Page = () => {
   return (
     <main className={styles.about}>
-      <Header />
+      <Header 
+        isHomeOrAboutPage
+      />
       <Nav
         pageName="home"
       />

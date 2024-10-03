@@ -1,0 +1,14 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.countryName {
+  text-transform: capitalize;
+}
+
+.blog p {
+  text-align: center;
+}

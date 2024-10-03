@@ -3,19 +3,20 @@ import { Location } from '@/components/molecules/location';
 import { Socials } from '@/components/molecules/socials';
 import styles from './header.module.css';
 
-const Header = ({ isCountriesAnimated }) => {
+const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
   return (
     <div className={styles.header}>
       <h2>LOGO HERE</h2>
-      <Location
+      {isHomeOrAboutPage && <Location
         isCountriesAnimated={isCountriesAnimated}
-      />
+      />}
       <Socials/>
     </div>
   )
 };
 
 Location.propTypes = {
+  isHomeOrAboutPage: PropTypes.bool,
   isCountriesAnimated: PropTypes.bool,
 };
 

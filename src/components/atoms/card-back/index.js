@@ -3,9 +3,9 @@ import Image from 'next/image';
 import codingCat from '@/data/assets/cat-gifs/coding-cat.gif';
 import styles from './card-back.module.css';
 
-const CardBack = ({ countryName, project }) => {
+const CardBack = ({ countryName, project, isFlipped }) => {
   return (
-  <div className={styles.backCard}>
+  <div className={`${styles.backCard} ${isFlipped ? styles.isFlipped : ''}`}>
     <h3 className={styles.backTitle}>{countryName}</h3>
     <h2 className={styles.projectTitle}>{project?.projectName || 'Project Incoming'}</h2>
     <div className={styles.backImage}>
@@ -26,6 +26,7 @@ const CardBack = ({ countryName, project }) => {
 CardBack.propTypes = {
   countryName: PropTypes.string.isRequired,
   project: PropTypes.object,
+  isFlipped: PropTypes.bool.isRequired
 };
 
 

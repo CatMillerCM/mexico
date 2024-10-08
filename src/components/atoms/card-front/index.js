@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { countryCoverPhotos } from '@/data/assets/country-cover-photos/index';
 import styles from './card-front.module.css';
 
-const CardFront = ({ countryName, existing }) => {
+const CardFront = ({ countryName, existing, isFlipped }) => {
   return (
-    <div className={styles.frontCard}>
+    <div className={`${styles.frontCard} ${isFlipped ? styles.isFlipped : ''}`}>
       <div className={styles.frontImage}>
         <Image
           src={countryCoverPhotos[countryName]}
@@ -25,7 +25,8 @@ const CardFront = ({ countryName, existing }) => {
 
 CardFront.propTypes = {
   countryName: PropTypes.string.isRequired,
-  existing: PropTypes.bool.isRequired
+  existing: PropTypes.bool.isRequired,
+  isFlipped: PropTypes.bool.isRequired
 };
 
 

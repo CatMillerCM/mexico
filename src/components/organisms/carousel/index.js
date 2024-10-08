@@ -26,7 +26,7 @@ const Carousel = ({ countries }) => {
                   ? styles.leftCard
                   : (currentIndex - 2 + countries.length) % countries.length === index
                     ? styles.farLeftCard
-                    : ''
+                    : styles.hiddenCard
             }`}
           key={countryName}
           onClick={() => handleClick(index)}

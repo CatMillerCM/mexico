@@ -1,6 +1,7 @@
 .cardContainer {
-  height: 40rem;
-  width: 25rem;
+  height: 50vh;
+  width: 50vw;
+  max-width: 25rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -8,7 +9,11 @@
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+  .cardContainer {
+    height: 65vh;
+  }
+
   /* .frontCentre:hover {
     transform: rotateY(-180deg);
   }

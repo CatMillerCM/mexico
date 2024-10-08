@@ -14,8 +14,10 @@ const CardFront = ({ countryName, existing }) => {
           objectFit="cover"
         />
       </div>
-      <h2 className={styles.frontTitle}>{countryName}</h2>
-      {!existing && <p className={styles.comingSoon}>Coming soon!</p>}
+      <div className={styles.frontTitle}>
+        <h2>{countryName}</h2>
+        {!existing && <p>Coming soon!</p>}
+      </div>
       <div className={styles.turnUp}></div>
     </div>
   )

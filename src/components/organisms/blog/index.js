@@ -32,8 +32,6 @@ const Blog = ({ countryName, project }) => {
               <Image 
                 src={image.src}
                 alt={image.alt}
-                width={200}
-                height={200}
                 objectFit="cover"
               />
               <p className={styles.caption}>{image.caption}</p>

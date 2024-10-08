@@ -2,6 +2,7 @@
 
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import { Card } from '@/components/molecules/card';
 import styles from './carousel.module.css';
 
@@ -12,8 +13,14 @@ const Carousel = ({ countries }) => {
     setCurrentIndex(index);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setCurrentIndex((prevIndex) => (prevIndex + 1) % countries.length),
+    onSwipedRight: () => setCurrentIndex((prevIndex) => (prevIndex - 1 + countries.length) % countries.length),
+    preventScrollOnSwipe: true
+  });
+
   return (
-    <div className={styles.carousel}>
+    <div className={styles.carousel} {...handlers} >
       {countries.map((countryName, index) => (
         <div
           className={`${styles.card} ${index === currentIndex

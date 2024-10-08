@@ -1,5 +1,4 @@
-import { countriesList } from '@/data';
-import { currentCountry } from '@/app/config';
+import { currentCountry, countriesList } from '@/data';
 import styles from './country-ticker.module.css';
 
 const CountryTicker = () => {

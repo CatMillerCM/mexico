@@ -41,6 +41,7 @@ const Card = ({ countryName, isCentreCard }) => {
       </Link>
       :
       <CardBack
+        countryName={countryName}
         project={projects[countryName]}
         isFlipped={isFlipped}
       />

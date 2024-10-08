@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { currentCountry } from '@/app/config';
+import { currentCountry } from '@/data';
 import { CountryTicker } from '@/components/atoms/country-ticker';
 import styles from './location.module.css';
 

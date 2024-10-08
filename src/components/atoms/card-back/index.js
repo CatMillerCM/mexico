@@ -6,8 +6,10 @@ import styles from './card-back.module.css';
 const CardBack = ({ countryName, project, isFlipped }) => {
   return (
   <div className={`${styles.backCard} ${isFlipped ? styles.isFlipped : ''}`}>
-    <h3 className={styles.backTitle}>{countryName}</h3>
-    <h2 className={styles.projectTitle}>{project?.projectName || 'Project Incoming'}</h2>
+    <div className={styles.titles}>
+      <h3 className={styles.backTitle}>{countryName}</h3>
+      <h2 className={styles.projectTitle}>{project?.projectName || 'Project Incoming'}</h2>
+    </div>
     <div className={styles.backImage}>
       <Image
         src={project?.cardImage.src || codingCat}

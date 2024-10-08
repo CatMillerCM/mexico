@@ -12,29 +12,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: darkslategrey;
   cursor: pointer;
   color: white;
+  text-align: center;
+}
+
+.titles {
+  padding: 0 1rem;
 }
 
 .backTitle {
   text-transform: capitalize;
-  margin: 4rem 0 0;
+  margin: 2rem 0 0;
 }
 
 .projectTitle {
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 
 .backImage {
   width: 80%;
-  height: 50%;
+  height: 30%;
   position: relative;
 }
 
 .summary {
-  padding: 0 2rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
   text-align: center;
 }
 
@@ -45,4 +51,25 @@
 
 .isFlipped {
   transform: rotateY(0deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .backTitle {
+    font-size: 1.5rem;
+    margin: 3rem 0 0;
+  }
+
+  .projectTitle {
+    font-size: 2rem;
+    margin: 0 0 2rem;
+  }
+
+  .backImage {
+    height: 50%;
+  }
+
+  .summary {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
 }

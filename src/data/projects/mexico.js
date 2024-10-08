@@ -2,7 +2,7 @@ import { countryCoverPhotos } from '@/data/assets/country-cover-photos';
 
 const mexico = {
   projectName: 'Project Name',
-  cardSummary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ullamcorper velit, sagittis suscipit massa. Donec faucibus feugiat odio. Sed non sem et dui placerat venenatis. Suspendisse sem ipsum, bibendum ut neque quis, condimentum rhoncus sapien. Donec suscipit fermentum leo a vehicula.',
+  cardSummary: 'Inspired by the country\'s infamous taco scene, this mini project is all about building your own tasty treat, in true Mexican style. Vamos!',
   cardImage: {
     src: countryCoverPhotos.belize,
     alt: 'Card image alt'

@@ -7,15 +7,39 @@ const countryName = {
   },
   projectIntro: 'Project intro',
   inspirationImages: [
-    {src: 'image 1', alt: 'image 1 alt'},
-    {src: 'image 2', alt: 'image 2 alt'},
-    {src: 'image 3', alt: 'image 3 alt'},
+    {
+      src: 'image 1',
+      alt: 'image 1 alt',
+      caption: 'image 1 caption'
+    },
+    {
+      src: 'image 2',
+      alt: 'image 2 alt',
+      caption: 'image 2 caption'
+    },
+    {
+      src: 'image 3',
+      alt: 'image 3 alt',
+      caption: 'image 3 caption'
+    },
   ],
   projectDescription: 'Project description',
   projectImages: [
-    {src: 'image 1', alt: 'image 1 alt'},
-    {src: 'image 2', alt: 'image 2 alt'},
-    {src: 'image 3', alt: 'image 3 alt'},
+    {
+      src: 'image 1',
+      alt: 'image 1 alt',
+      caption: 'image 1 caption'
+    },
+    {
+      src: 'image 2',
+      alt: 'image 2 alt',
+      caption: 'image 2 caption'
+    },
+    {
+      src: 'image 3',
+      alt: 'image 3 alt',
+      caption: 'image 3 caption'
+    },
   ],
   projectFinalThoughts: 'Project final thoughts',
   hostedLink: 'hosted url'

@@ -19,22 +19,21 @@ const Carousel = ({ countries }) => {
     preventScrollOnSwipe: true
   });
 
+  const getClassname = (index) => {
+    if (index === currentIndex) return styles.centerCard;
+    if (index === (currentIndex + 1) % countries.length) return styles.rightCard;
+    if (index === (currentIndex + 2) % countries.length) return styles.farRightCard;
+    if (index === (currentIndex - 1 + countries.length) % countries.length) return styles.leftCard;
+    if (index === (currentIndex - 2 + countries.length) % countries.length) return styles.farLeftCard;
+
+    return styles.hiddenCard;
+  }
+
   return (
     <div className={styles.carousel} {...handlers} >
       {countries.map((countryName, index) => (
         <div
-          className={`${styles.card} ${index === currentIndex
-            ? styles.centerCard
-            : index === (currentIndex + 1) % countries.length
-              ? styles.rightCard
-              : index === (currentIndex + 2) % countries.length
-                ? styles.farRightCard
-                : index === (currentIndex - 1 + countries.length) % countries.length
-                  ? styles.leftCard
-                  : (currentIndex - 2 + countries.length) % countries.length === index
-                    ? styles.farLeftCard
-                    : styles.hiddenCard
-            }`}
+          className={`${styles.card} ${getClassname(index)}`}
           key={countryName}
           onClick={() => handleClick(index)}
         >

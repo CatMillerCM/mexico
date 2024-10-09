@@ -10,6 +10,7 @@
   gap: 1rem;
   text-align: center;
   animation: scroll-countries 2.5s ease-in-out forwards;
+  text-transform: capitalize;
 }
 
 .countryList p:last-child {

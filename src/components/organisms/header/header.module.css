@@ -2,5 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+.planeTrail {
+  width: 100%;
+  margin: 2rem 0;
+  border-bottom: 2px dashed white;
+}
+
+.plane {
+  animation: move-plane 1s ease-in-out forwards;
+}
+
+.planeImg {
+  height: 100px;
+}
+
+@keyframes move-plane {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
 }

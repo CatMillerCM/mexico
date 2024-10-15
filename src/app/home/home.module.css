@@ -1,0 +1,14 @@
+.home {
+  transform: translateX(100%);
+  animation: move-page-in 2.5s linear forwards;
+}
+
+@keyframes move-page-in {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

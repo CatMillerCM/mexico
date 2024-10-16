@@ -1,10 +1,36 @@
 .nav {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  padding: 0 0 2rem;
+  flex-direction: column;
+  width: 100%;
 }
 
 .link {
-  text-transform: uppercase;
+  position: absolute;
+  right: -1.5rem;
+  display: flex;
+}
+
+.link:nth-child(2) {
+  top: 5rem;
+}
+
+.link * {
+  border-radius: 50% 0 0 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.pageName {
+  text-transform: capitalize;
+  transform: rotate(90deg);
+  text-align: center;
   color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.link:hover {
+  transform: translateX(-1.5rem);
+  transition: 0.5s ease;
 }

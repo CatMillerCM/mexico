@@ -7,12 +7,12 @@ import styles from './home.module.css';
 const Page = () => {
   return (
     <main>
+      <Nav
+        pageNames={[ "about" ]}
+      />
       <Header
         isHomeOrAboutPage
         isCountriesAnimated
-      />
-      <Nav
-        pageName="about"
       />
       <Carousel
         countries={visitedCountries}

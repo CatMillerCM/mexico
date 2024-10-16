@@ -5,11 +5,11 @@ import styles from './about.module.css';
 const Page = () => {
   return (
     <main className={styles.about}>
+      <Nav
+        pageNames={[ "home" ]}
+      />
       <Header 
         isHomeOrAboutPage
-      />
-      <Nav
-        pageName="home"
       />
       <div className={styles.text}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ullamcorper velit, sagittis suscipit massa. Donec faucibus feugiat odio. Sed non sem et dui placerat venenatis. Suspendisse sem ipsum, bibendum ut neque quis, condimentum rhoncus sapien. Donec suscipit fermentum leo a vehicula. Nunc molestie, tortor ac scelerisque commodo, quam odio gravida quam, sit amet ultricies mi tellus sit amet lorem. Suspendisse fermentum id nulla in tempor. Nulla facilisi. Integer at purus et nulla egestas rutrum nec sed mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempus ante eros, id pulvinar risus venenatis eu.</p>

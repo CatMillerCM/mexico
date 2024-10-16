@@ -9,10 +9,10 @@ const Page = ({ params: { url } }) => {
 
   return (
     <main>
-      <Header />
       <Nav
-        pageName="home"
+        pageNames={[ "home", "about" ]}
       />
+      <Header />
       <Blog 
         countryName={countryName}
         project={projects[countryName]}

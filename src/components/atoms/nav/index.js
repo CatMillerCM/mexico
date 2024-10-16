@@ -8,7 +8,7 @@ const Nav = ({ pageNames }) => {
   return (
     <div className={styles.nav} >
       {pageNames.map((page) => (
-      <Link className={styles.link} href={`/${page}`}>
+      <Link className={styles.link} key={page} href={`/${page}`}>
         <p className={styles.pageName}>{page}</p>
         <Image
           src={pageNavPhotos[page]}

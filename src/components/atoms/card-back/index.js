@@ -31,5 +31,4 @@ CardBack.propTypes = {
   isFlipped: PropTypes.bool.isRequired
 };
 
-
 export { CardBack };

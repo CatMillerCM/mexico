@@ -1,0 +1,57 @@
+.planeDiv {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  top: 56vh;
+  justify-content: center;
+}
+
+.plane {
+  height: 80px;
+  transform: rotate(45deg);
+  padding-right: 1rem;
+}
+
+.linearTrail {
+  animation: linear-trail 1s ease-in-out forwards 8s;
+}
+
+.entryTrail {
+  animation: entry-trail 4s linear forwards 2s;
+}
+
+@keyframes linear-trail {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes entry-trail {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  12% {
+    transform: translateY(-5rem) rotate(22deg);
+  }
+
+  25% {
+    transform: translateY(-10rem) rotate(0deg);
+  }
+
+  37% {
+    transform: translateY(-15rem) rotate(22deg);
+  }
+
+  50% {
+    transform: translateY(-20rem) rotate(45deg);
+  }
+
+  100% {
+    transform: translateY(-20rem) rotate(45deg);
+  }
+}

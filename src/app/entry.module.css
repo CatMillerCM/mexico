@@ -1,9 +1,36 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+}
+
+.sections {
+  display: flex;
+  position: relative;
+  animation: move-page 4s forwards 2s;
+}
+
 .entry {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20vh;
-  animation: move-page-out 4s 1.5s linear forwards;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100vw);
 }
 
 .logo {
@@ -13,48 +40,12 @@
   margin: -4rem 0 5rem;
 }
 
-.plane {
-  position: fixed;
-  top: 56%;
-  left: 46%;
-}
-
-.planeImg {
-  height: 100px;
-  transform: rotate(45deg);
-  animation: move-plane 4s 1s linear forwards;
-  /* offset-path: path("M50,80 C100,80 150,60 250,40 C350,10 450,40 550,50"); */
-  /* offset-distance: 0; */
-}
-
-@keyframes move-page-out {
+@keyframes move-page {
   0% {
     transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-75%);
-  }
-}
-
-@keyframes move-plane {
-  0% {
-    transform: rotate(45deg) translateY(0);
-  }
-
-  25% {
-    transform: rotate(25deg) translateY(-150%);
-  }
-
-  50% {
-    transform: rotate(0) translateY(-300%);
-  }
-
-  75% {
-    transform: rotate(25deg) translateY(-450%);
-  }
-
-  100% {
-    transform: rotate(45deg) translateY(-600%);
+    transform: translateX(-200vw);
   }
 }

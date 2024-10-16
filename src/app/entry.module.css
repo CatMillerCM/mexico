@@ -11,7 +11,7 @@
 .sections {
   display: flex;
   position: relative;
-  animation: move-page 4s forwards 2s;
+  animation: move-page 4s forwards 1s;
 }
 
 .entry {
@@ -24,13 +24,12 @@
   margin-top: 20vh;
 }
 
-.home {
+.largeGlobe {
   width: 100vw;
   height: 100vh;
   flex-shrink: 0;
   display: flex;
-  flex-direction: column;
-  transform: translateX(100vw);
+  transform: translateX(25vw);
 }
 
 .logo {
@@ -46,6 +45,6 @@
   }
 
   100% {
-    transform: translateX(-200vw);
+    transform: translateX(-100vw);
   }
 }

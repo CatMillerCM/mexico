@@ -28,7 +28,7 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
       <motion.div
         initial={{ translateX: '-100vw' }}
         animate={stage === 'leaving' ? variants.leaving : variants.entering}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
       >
         <Plane />
       </motion.div>

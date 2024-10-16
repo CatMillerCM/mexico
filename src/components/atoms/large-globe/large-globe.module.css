@@ -1,0 +1,13 @@
+.largeGlobe {
+  animation: scale-globe 6s ease-in-out forwards 1s;
+}
+
+@keyframes scale-globe {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(2.5);
+  }
+}

@@ -2,10 +2,7 @@
 
 import Script from 'next/script';
 import { Plane } from '@/components/atoms/plane';
-import { Nav } from '@/components/atoms/nav';
-import { Header } from '@/components/organisms/header';
-import { Carousel } from '@/components/organisms/carousel';
-import { visitedCountries } from '@/data';
+import { LargeGlobe } from '@/components/atoms/large-globe';
 import styles from './entry.module.css';
 
 const Entry = () => {
@@ -44,17 +41,8 @@ const Entry = () => {
               <h1>#COUNTRY CODE?</h1>
             </div>
           </section>
-          <section className={styles.home}>
-            <Header
-              isHomeOrAboutPage
-              isCountriesAnimated
-            />
-            {/* <Nav
-              pageName="about"
-            /> */}
-            <Carousel
-              countries={visitedCountries}
-            />
+          <section className={styles.largeGlobe}>
+            <LargeGlobe />
           </section>
         </div>
       </div>

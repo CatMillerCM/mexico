@@ -4,6 +4,7 @@
   width: 100vw;
   top: var(--plane-top, 56vh);
   justify-content: center;
+  z-index: 2;
 }
 
 .plane {
@@ -13,7 +14,7 @@
 }
 
 .entryTrail {
-  animation: entry-trail 4s linear forwards 2s;
+  animation: entry-trail 6s linear forwards 1s;
 }
 
 @keyframes entry-trail {
@@ -26,7 +27,7 @@
   }
 
   25% {
-    transform: translateY(-10rem) rotate(0deg);
+    transform: translateY(-10rem) rotate(10deg);
   }
 
   37% {
@@ -38,6 +39,6 @@
   }
 
   100% {
-    transform: translateY(-20rem) rotate(45deg);
+    transform: translateX(60vw) translateY(-20rem) rotate(45deg);
   }
 }

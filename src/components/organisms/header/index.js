@@ -16,8 +16,6 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
     leaving: { translateX: '50vw' }
   };
 
-  console.log(stage)
-
   return (
     <div className={styles.header}>
       <h2>LOGO HERE</h2>

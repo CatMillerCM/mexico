@@ -5,7 +5,6 @@ import { pageNavPhotos } from '@/data/assets/page-nav-photos';
 import styles from './nav.module.css';
 
 const Nav = ({ pageNames }) => {
-  console.log(pageNames)
   return (
     <div className={styles.nav} >
       {pageNames.map((page) => (

@@ -35,7 +35,7 @@ const Entry = () => {
       <Script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js" />
       <Script src="/js/planetaryjs.min.js" onLoad={initPlanet} />
       <div className={styles.content}>
-        <Plane />
+        <Plane entry/>
         <div className={styles.sections}>
           <section className={styles.entry}>
             <canvas id="globe" width="250" height="250"></canvas>
@@ -63,3 +63,18 @@ const Entry = () => {
 }
 
 export default Entry;
+
+// TO DO - FUNCTIONALITY
+// plane
+// write about page
+// remove mexico page
+
+// TO DO - STYLING
+// logo
+// nav
+// general page colours
+
+// STRETCH GOALS
+// add country flags
+// add country numbers
+// get images to load better

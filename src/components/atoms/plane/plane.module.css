@@ -2,7 +2,7 @@
   position: absolute;
   display: flex;
   width: 100vw;
-  top: 56vh;
+  top: var(--plane-top, 56vh);
   justify-content: center;
 }
 
@@ -12,22 +12,8 @@
   padding-right: 1rem;
 }
 
-.linearTrail {
-  animation: linear-trail 1s ease-in-out forwards 8s;
-}
-
 .entryTrail {
   animation: entry-trail 4s linear forwards 2s;
-}
-
-@keyframes linear-trail {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(100vw);
-  }
 }
 
 @keyframes entry-trail {

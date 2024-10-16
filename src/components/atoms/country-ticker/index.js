@@ -1,7 +1,12 @@
+'use client';
+
 import { currentCountry, countriesList } from '@/data';
+import { useEffect, useState } from 'react';
 import styles from './country-ticker.module.css';
 
 const CountryTicker = () => {
+  const [tickerCountries, setTickerCountries] = useState([]);
+
   const getRandomCountries = (max, quantity) => {
     const arr = [];
 
@@ -16,17 +21,21 @@ const CountryTicker = () => {
     return arr;
   }
 
-  const countryTicker = () => {
+  useEffect(() => {
     const randomCountries = getRandomCountries(countriesList.length - 1, 25);
     randomCountries.push(currentCountry);
 
-    return randomCountries;
-  };
+    setTickerCountries(randomCountries);
+  }, []);
+
+  if (tickerCountries.length === 0) {
+    return null;
+  }
 
   return (
     <div className={styles.countryTicker}>
       <div className={styles.countryList}>
-        {countryTicker().map((country) => (
+        {tickerCountries.map((country) => (
           <p key={country}>{country}</p>)
         )}
       </div>

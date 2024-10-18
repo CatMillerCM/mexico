@@ -8,6 +8,23 @@
   position: relative;
 }
 
+.starryNight {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 20px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 30px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 450px 450px, 250px 250px, 350px 350px; 
+  background-position: 0 0, 20px 80px, 10px 250px, 100px 10px;
+  opacity: 0;
+  z-index: -1;
+  animation: fade-stars 5s ease-in 1s;
+}
+
 .sections {
   display: flex;
   position: relative;
@@ -24,19 +41,41 @@
   margin-top: 20vh;
 }
 
+.logo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -4rem 0 5rem;
+}
+
+.earth {
+  background-image: url('../data/assets/world-map.jpg');
+  width: 100px;
+  height: 100px;
+  box-shadow: inset 16px 0 40px 3px rgba(0,0,0,0.9), inset -3px 0 5px 2px rgba(255,255,255,0.16);
+  background-size: 190px;
+  border-radius: 50%;
+  animation: rotate 4s infinite linear;
+}
+
 .largeGlobe {
   width: 100vw;
   height: 100vh;
   flex-shrink: 0;
   display: flex;
-  transform: translateX(25vw);
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
+  transform: translateX(50vw);
   align-items: center;
-  margin: -4rem 0 5rem;
+}
+  
+@keyframes rotate {
+  0% { 
+    background-position: 0;
+  }
+
+  100% { 
+    background-position: 190px;
+  }
 }
 
 @keyframes move-page {
@@ -46,5 +85,32 @@
 
   100% {
     transform: translateX(-100vw);
+  }
+}
+
+@keyframes fade-stars {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .starryNight {
+    background-size: 1000px 1000px, 550px 550px, 350px 350px, 450px 450px; 
+    background-position: 0 0, 120px 180px, 90px 140px, 300px 90px;
+  }
+
+  @keyframes fade-stars {
+    0% {
+      opacity: 0;
+    }
+  
+    70% {
+      opacity: 1;
+    }
   }
 }

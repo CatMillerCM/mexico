@@ -13,9 +13,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: darkslategrey;
+  background-color: var(--color-primary);
   cursor: pointer;
-  color: white;
+  color: var(--color-text-warm);
   text-align: center;
 }
 

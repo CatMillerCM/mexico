@@ -16,7 +16,7 @@
 
 .countryList p:last-child {
   animation: pop 1s ease-in-out forwards 3s;
-  text-shadow: 0 0 0.75rem orange; 
+  text-shadow: 0 0 0.75rem var(--color-text-cool); 
 }
 
 @keyframes scroll-countries {

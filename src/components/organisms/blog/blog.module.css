@@ -36,15 +36,15 @@
 }
 
 .hostedLink > button {
-  background: wheat;
+  background: var(--color-primary);
   border: none;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 0.75rem wheat;
+  box-shadow: 0 0 0.75rem var(--color-text-cool);
 }
 
 .hostedLink:hover > button {
-  box-shadow: 0 0 1.5rem wheat;
+  box-shadow: 0 0 1.5rem var(--color-text-cool);
 }
 
 @media screen and (min-width: 1024px) {

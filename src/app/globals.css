@@ -1,6 +1,26 @@
+:root {
+  /* Colour Palette */
+  --color-black: #020202;
+  --color-white: #fff;
+  --color-charcoal-grey: #5D5D5D;
+  --color-slate-grey: #7C7C7C;
+  --color-electric-aqua: #00d9c6;
+
+  /* Colours */
+  --color-primary: var(--color-electric-aqua);
+  --color-secondary: var(--color-black);
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+}
+
 body {
-  color: white;
-  background: black;
+  color: var(--color-text);
+  background: var(--color-background);
   height: 100%;
   margin: 0;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
 }

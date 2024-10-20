@@ -13,12 +13,4 @@
   .cardContainer {
     height: 65vh;
   }
-
-  /* .frontCentre:hover {
-    transform: rotateY(-180deg);
-  }
-
-  .backCentre:hover {
-    transform: rotateY(0deg);
-  } */
 }

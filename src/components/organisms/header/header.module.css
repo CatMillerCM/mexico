@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1em 0;
+  margin-bottom: 2rem;
+  background-color: var(--color-primary);
 
   --plane-top: -1vh;
 }
@@ -10,5 +12,5 @@
 .planeTrail {
   width: 100%;
   margin: 2rem 0;
-  border-bottom: 2px dashed white;
+  border-bottom: 2px dashed var(--color-white);
 }

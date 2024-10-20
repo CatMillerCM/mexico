@@ -31,20 +31,20 @@ const Card = ({ countryName, isCentreCard }) => {
         isFlipped={isFlipped}
       />
       {projects[countryName]
-      ?
-      <Link href={`/${countryName.replace(/\s+/g, '-')}`}>
+        ?
+        <Link href={`/${countryName.replace(/\s+/g, '-')}`} prefetch>
+          <CardBack
+            countryName={countryName}
+            project={projects[countryName]}
+            isFlipped={isFlipped}
+          />
+        </Link>
+        :
         <CardBack
           countryName={countryName}
           project={projects[countryName]}
           isFlipped={isFlipped}
         />
-      </Link>
-      :
-      <CardBack
-        countryName={countryName}
-        project={projects[countryName]}
-        isFlipped={isFlipped}
-      />
       }
     </div >
   );

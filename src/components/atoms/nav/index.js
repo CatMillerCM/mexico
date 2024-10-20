@@ -8,14 +8,14 @@ const Nav = ({ pageNames }) => {
   return (
     <div className={styles.nav} >
       {pageNames.map((page) => (
-      <Link className={styles.link} key={page} href={`/${page}`}>
-        <p className={styles.pageName}>{page}</p>
-        <Image
-          src={pageNavPhotos[page]}
-          alt={page === 'home' ? 'Image of a globe to navigate to "Home"' : 'Image of Cat Miller to navigate to "About"'}
-          objectFit="cover"
-        />
-      </Link>
+        <Link className={styles.link} key={page} href={`/${page}`}>
+          <p className={styles.pageName}>{page}</p>
+          <Image
+            src={pageNavPhotos[page]}
+            alt={page === 'home' ? 'Image of a globe to navigate to "Home"' : 'Image of Cat Miller to navigate to "About"'}
+            objectFit="cover"
+          />
+        </Link>
       ))}
     </div>
   )

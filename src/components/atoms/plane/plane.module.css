@@ -4,7 +4,7 @@
   width: 100vw;
   top: var(--plane-top, 56vh);
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 .plane {

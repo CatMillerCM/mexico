@@ -1,10 +1,22 @@
 'use client';
 
+import { useEffect } from 'react';
+import { useTransitionRouter } from 'next-transition-router';
 import { Plane } from '@/components/atoms/plane';
-import { LargeGlobe } from '@/components/atoms/large-globe';
+import { Globe } from '@/components/atoms/globe';
 import styles from './entry.module.css';
 
 const Entry = () => {
+  const router = useTransitionRouter();
+
+  useEffect(() => {
+    router.prefetch('/home');
+
+    setTimeout(() => {
+      router.push('/home');
+    }, 6000);
+  }, []);
+
   return (
     <main className={styles.main}>
       <div className={styles.content}>
@@ -12,14 +24,14 @@ const Entry = () => {
         <Plane entry />
         <div className={styles.sections}>
           <section className={styles.entry}>
-            <div className={styles.earth}></div>
+            <Globe />
             <div className={styles.logo}>
               <h2>what's my</h2>
               <h1>#COUNTRY CODE?</h1>
             </div>
           </section>
           <section className={styles.largeGlobe}>
-            <LargeGlobe />
+            <Globe />
           </section>
         </div>
       </div>
@@ -30,7 +42,8 @@ const Entry = () => {
 export default Entry;
 
 // TO DO - FUNCTIONALITY
-// plane
+// compress globe image to make quicker to load
+// delay start until image has loaded
 // write about page
 // remove mexico page
 

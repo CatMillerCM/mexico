@@ -1,8 +1,11 @@
-import { Inter } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import Providers from "./providers";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 export const metadata = {
   title: "What's my country code?",
@@ -12,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={instrumentSans.className}>
         <Providers>{children}</Providers>
       </body>
     </html>

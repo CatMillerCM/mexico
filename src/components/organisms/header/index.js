@@ -30,7 +30,6 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
       >
         <Plane />
       </motion.div>
-      <div className={styles.planeTrail} />
     </div>
   )
 };

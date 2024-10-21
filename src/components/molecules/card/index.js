@@ -37,6 +37,7 @@ const Card = ({ countryName, isCentreCard }) => {
             countryName={countryName}
             project={projects[countryName]}
             isFlipped={isFlipped}
+            projectExists
           />
         </Link>
         :

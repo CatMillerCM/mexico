@@ -42,17 +42,11 @@ const Entry = () => {
 export default Entry;
 
 // TO DO - FUNCTIONALITY
-// compress globe image to make quicker to load
-// delay start until image has loaded
 // write about page
 // remove mexico page
+// fix rotate out of bounds
+// fix nav hover
 
 // TO DO - STYLING
 // logo
-// nav
-// general page colours
-
-// STRETCH GOALS
-// add country flags
-// add country numbers
-// get images to load better
+// 404 pages

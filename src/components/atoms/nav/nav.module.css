@@ -15,10 +15,17 @@
   top: 5rem;
 }
 
-.link * {
+.link img:first-child {
+  height: 6rem;
+  transform: rotate(-72deg);
+  margin: -0.75rem -11rem 0 0;
+}
+
+.link img:nth-child(2) {
   border-radius: 50% 0 0 50%;
   height: 5rem;
   width: 5rem;
+  box-shadow: -4px 4px 5px var(--color-dark-aqua);
 }
 
 .pageName {
@@ -26,8 +33,9 @@
   transform: rotate(90deg);
   text-align: center;
   text-decoration: none;
-  color: var(--color-white);
-  margin: 0;
+  color: var(--color-dark-aqua);
+  margin: 0.8rem;
+  font-weight: 600;
 }
 
 .link:hover {

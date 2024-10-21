@@ -22,7 +22,7 @@ const Blog = ({ countryName, project }) => {
     <div className={styles.blog}>
       <div className={styles.intro}>
         <h2 className={styles.countryName}>{countryName}</h2>
-        <h1>{project.projectName}</h1>
+        <h1 className={styles.projectName}>{project.projectName}</h1>
         <p>{project.projectIntro}</p>
       </div>
       <div className={styles.inspirationImages}>

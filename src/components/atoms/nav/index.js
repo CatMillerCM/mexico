@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Image from 'next/image';
 import { pageNavPhotos } from '@/data/assets/page-nav-photos';
+import { navNames } from '@/data/assets/nav-names';
 import styles from './nav.module.css';
 
 const Nav = ({ pageNames }) => {
@@ -9,7 +10,10 @@ const Nav = ({ pageNames }) => {
     <div className={styles.nav} >
       {pageNames.map((page) => (
         <Link className={styles.link} key={page} href={`/${page}`}>
-          <p className={styles.pageName}>{page}</p>
+          <Image
+            src={navNames[page]}
+            alt={page}
+          />
           <Image
             src={pageNavPhotos[page]}
             alt={page === 'home' ? 'Image of a globe to navigate to "Home"' : 'Image of Cat Miller to navigate to "About"'}

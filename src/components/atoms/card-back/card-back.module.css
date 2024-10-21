@@ -13,9 +13,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--color-primary);
+  background-color: var(--color-dark-primary);
   cursor: pointer;
-  color: var(--color-text-warm);
+  color: var(--color-white);
   text-align: center;
 }
 
@@ -26,19 +26,24 @@
 .backTitle {
   text-transform: capitalize;
   margin: 2rem 0 0;
+  color: var(--color-light-secondary);
 }
 
 .projectTitle {
   margin: 0 0 1rem;
+  text-shadow: -1px 1px 10px var(--color-black);
 }
 
 .backImage {
   width: 80%;
   height: 30%;
   position: relative;
+  border-radius: 10px;
+  border: 5px solid var(--color-light-secondary);
+  box-shadow: -1px 1px 10px var(--color-black);
 }
 
-.summary {
+.summary, .fallbackSummary {
   padding: 0 1rem;
   font-size: 0.875rem;
   text-align: center;
@@ -47,10 +52,15 @@
 .readMore {
   text-decoration: underline;
   margin: 0 0 2rem;
+  color: var(--color-light-primary);
 }
 
 .isFlipped {
   transform: rotateY(0deg);
+}
+
+.noCursor {
+  cursor: default;
 }
 
 @media screen and (min-width: 1024px) {

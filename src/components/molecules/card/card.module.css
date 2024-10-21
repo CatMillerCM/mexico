@@ -7,6 +7,7 @@
   position: relative;
   perspective: 1000px;
   cursor: pointer;
+  box-shadow: -2px 2px 20px var(--color-black);
 }
 
 @media screen and (min-width: 1024px) {

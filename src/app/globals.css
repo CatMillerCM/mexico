@@ -2,20 +2,21 @@
   /* Colour Palette */
   --color-black: #020202;
   --color-white: #fff;
-  --color-charcoal-grey: #5D5D5D;
-  --color-slate-grey: #7C7C7C;
-  --color-electric-aqua: #00d9c6;
+  --color-light-aqua: #00d9c6;
+  --color-dark-aqua: #216869;
+  --color-dark-coral: #F08080;
+  --color-light-coral: #eebdbd;
 
   /* Colours */
-  --color-primary: var(--color-electric-aqua);
-  --color-secondary: var(--color-black);
-  --color-background: var(--color-black);
-  --color-text: var(--color-white);
+  --color-light-primary: var(--color-light-aqua);
+  --color-light-secondary: var(--color-light-coral);
+  --color-dark-primary: var(--color-dark-aqua);
+  --color-dark-secondary: var(--color-dark-coral);
 }
 
 body {
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--color-white);
+  background: var(--color-black);
   height: 100%;
   margin: 0;
 }

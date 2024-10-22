@@ -16,9 +16,8 @@
 }
 
 .link img:first-child {
-  height: 6rem;
-  transform: rotate(-72deg);
-  margin: -0.75rem -11rem 0 0;
+  margin-right: -0.3rem;
+  transform: rotate(5deg);
 }
 
 .link img:nth-child(2) {

@@ -6,14 +6,14 @@ import styles from './not-found-ready.module.css';
 const NotReady = () => {
   return (
     <main className={styles.notReady}>
-      <h2>Uh oh!</h2>
+      <h2 className={styles.uhOh}>Uh oh!</h2>
       <Image
         src={sideEyeCat}
         alt='Gif of a cat side-eyeing the camera'
         unoptimized
       />
       <div>
-        <p>Looks like there's nothing here... yet.</p>
+        <p className={styles.firstLine}>Looks like there's nothing here... yet.</p>
         <p>Pack your bags and check back soon.</p>
         <p>In the meantime, head <Link href='/home' className={styles.link}>home</Link> for a rest!</p>
       </div>

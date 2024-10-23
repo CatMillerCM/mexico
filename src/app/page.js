@@ -44,9 +44,7 @@ export default Entry;
 // TO DO - FUNCTIONALITY
 // write about page
 // remove mexico page
-// fix rotate out of bounds
-// fix nav hover
+// add correct about and home images
 
 // TO DO - STYLING
 // logo
-// 404 pages

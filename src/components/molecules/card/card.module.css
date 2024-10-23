@@ -3,15 +3,15 @@
   width: 50vw;
   max-width: 25rem;
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   perspective: 1000px;
   cursor: pointer;
   box-shadow: -2px 2px 20px var(--color-black);
+  overflow: visible;
 }
 
 @media screen and (min-width: 1024px) {
   .cardContainer {
-    height: 65vh;
+    height: 60vh;
   }
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { currentCountry, countriesList } from '@/data';
+import { currentCountry, allCountries } from '@/data';
 import { useEffect, useState } from 'react';
 import styles from './country-ticker.module.css';
 
@@ -12,7 +12,7 @@ const CountryTicker = () => {
 
     while (arr.length < quantity) {
       const index = Math.floor(Math.random() * max);
-      const country = countriesList[index];
+      const country = allCountries[index];
       if (!arr.includes(country) && country !== currentCountry) {
         arr.push(country);
       }
@@ -22,7 +22,7 @@ const CountryTicker = () => {
   }
 
   useEffect(() => {
-    const randomCountries = getRandomCountries(countriesList.length - 1, 25);
+    const randomCountries = getRandomCountries(allCountries.length - 1, 25);
     randomCountries.push(currentCountry);
 
     setTickerCountries(randomCountries);

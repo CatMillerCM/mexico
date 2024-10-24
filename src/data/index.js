@@ -1,4 +1,4 @@
-import { countriesList } from './countries-list';
-import { currentCountry, visitedCountries } from './visited-countries';
+import { allCountries } from './all-countries';
+import { currentCountry, myCountries } from './my-countries';
 
-export { countriesList, currentCountry, visitedCountries };
+export { allCountries, currentCountry, myCountries };

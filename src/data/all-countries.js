@@ -1,4 +1,4 @@
-const countriesList = [
+const allCountries = [
   'afghanistan',
   'albania',
   'algeria',
@@ -194,4 +194,4 @@ const countriesList = [
   'zimbabwe'
 ];
 
-export { countriesList };
+export { allCountries };

@@ -5,14 +5,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import NotReady from '@/app/not-ready';
 import NotFound from '@/app/not-found';
-import { countriesList } from '@/data';
+import { allCountries } from '@/data';
 import styles from './blog.module.css';
 
 const Blog = ({ countryName, project }) => {
 
   if (!project) {
     return (
-      countriesList.includes(countryName)
+      allCountries.includes(countryName)
         ? <NotReady/>
         : <NotFound/>
     )

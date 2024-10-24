@@ -1,6 +1,6 @@
 const currentCountry = 'United Kingdom';
 
-const visitedCountries = [
+const myCountries = [
   'mexico',
   'belize',
   'guatemala',
@@ -9,4 +9,4 @@ const visitedCountries = [
   'united kingdom',
 ]
 
-export { currentCountry, visitedCountries };
+export { currentCountry, myCountries };

@@ -12,19 +12,23 @@
 }
 
 .link:nth-child(2) {
-  top: 5rem;
+  top: 4rem;
 }
 
 .link img:first-child {
-  margin-right: -0.3rem;
-  transform: rotate(5deg);
+  transform: rotate(8deg);
+  margin: -0.2rem -0.2rem 0 0;
 }
 
 .link img:nth-child(2) {
   border-radius: 50% 0 0 50%;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   box-shadow: -4px 4px 5px var(--color-electric-aqua);
+}
+
+.home img:nth-child(2) {
+  box-shadow: -4px 4px 5px var(--color-sunset-orange);
 }
 
 .link:hover {

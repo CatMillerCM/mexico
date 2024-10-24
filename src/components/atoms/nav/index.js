@@ -9,7 +9,7 @@ const Nav = ({ pageNames }) => {
   return (
     <div className={styles.nav} >
       {pageNames.map((page) => (
-        <Link className={styles.link} key={page} href={`/${page}`}>
+        <Link className={`${styles.link} ${page === 'home' ? styles.home : ''}`} key={page} href={`/${page}`}>
           <Image
             src={navNames[page]}
             alt={page}

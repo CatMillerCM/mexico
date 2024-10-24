@@ -6,6 +6,12 @@
 
 .content {
   position: relative;
+  width: 100vw;
+  flex-shrink: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .starryNight {
@@ -32,32 +38,34 @@
   animation: move-page 4s forwards 1s;
 }
 
-.entry, .largeGlobe {
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
+.entry {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.globe {
+  height: 100%;
+  animation: scale-globe 6s ease-in forwards 1.5s;
+}
+
 .logo {
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -4rem 0 5rem;
+  margin: -7.5rem 0 5rem;
+  z-index: 3;
+  gap: 1.7rem;
+  animation: move-off-page 4s forwards 1s;
 }
 
-.largeGlobe {
-  height: 100%;
-  transform: translateX(20vw);
-  animation: scale-globe 6s ease-in forwards 1s;
+.logo *:first-child {
+  height: 3rem;
+  margin-left: -0.3rem;
 }
 
-
-@keyframes move-page {
+@keyframes move-off-page {
   0% {
     transform: translateX(0);
   }
@@ -84,11 +92,11 @@
 
 @keyframes scale-globe {
   0% {
-    transform: scale(0);
+    transform: scale(1);
   }
 
   100% {
-    transform: scale(18);
+    transform: scale(7);
   }
 }
 

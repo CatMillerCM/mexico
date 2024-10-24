@@ -1,9 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect } from 'react';
 import { useTransitionRouter } from 'next-transition-router';
 import { Plane } from '@/components/atoms/plane';
 import { Globe } from '@/components/atoms/globe';
+import { condensedLogo, fullLogo } from '@/data/assets/logos';
 import styles from './entry.module.css';
 
 const Entry = () => {
@@ -21,19 +23,16 @@ const Entry = () => {
     <main className={styles.main}>
       <div className={styles.content}>
         <div className={styles.starryNight}></div>
-        <Plane entry />
-        <div className={styles.sections}>
-          <section className={styles.entry}>
+        <div className={styles.entry}>
+          <div className={styles.globe}>
             <Globe />
-            <div className={styles.logo}>
-              <h2>what's my</h2>
-              <h1>#COUNTRY CODE?</h1>
-            </div>
-          </section>
-          <section className={styles.largeGlobe}>
-            <Globe />
-          </section>
+          </div>
+          <div className={styles.logo}>
+            <Image src={condensedLogo} alt="What's my country code condensed logo"/>
+            <Image src={fullLogo} alt="What's my country code logo"/>
+          </div>
         </div>
+        <Plane entry />
       </div>
     </main>
   );
@@ -41,10 +40,16 @@ const Entry = () => {
 
 export default Entry;
 
-// TO DO - FUNCTIONALITY
+// TO DO
 // write about page
 // remove mexico page
 // add correct about and home images
-
-// TO DO - STYLING
-// logo
+// get plane arc intro/exit working
+// get entry plane path good
+// fix side margin of about/home buttons
+// box shadow on selected card
+// new colours all over
+// blog page - as scroll background increases in colour?
+// carousel turn up only on cards that have back/project
+// logo on each page
+// favicon

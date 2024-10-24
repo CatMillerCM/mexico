@@ -1,14 +1,5 @@
 .home {
-  transform: translateX(100%);
-  animation: move-page-in 2.5s linear forwards;
-}
-
-@keyframes move-page-in {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at 50% 65%, var(--color-electric-aqua) 0%, var(--color-black) 45%);
 }

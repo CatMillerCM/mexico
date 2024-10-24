@@ -16,7 +16,6 @@ const Page = () => {
       />
       <Carousel
         myCountries={myCountries}
-        countries={visitedCountries}
       />
     </main>
   );

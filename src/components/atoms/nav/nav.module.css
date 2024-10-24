@@ -24,17 +24,7 @@
   border-radius: 50% 0 0 50%;
   height: 5rem;
   width: 5rem;
-  box-shadow: -4px 4px 5px var(--color-dark-aqua);
-}
-
-.pageName {
-  text-transform: capitalize;
-  transform: rotate(90deg);
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-dark-aqua);
-  margin: 0.8rem;
-  font-weight: 600;
+  box-shadow: -4px 4px 5px var(--color-electric-aqua);
 }
 
 .link:hover {

@@ -1,7 +1,7 @@
 .globeContainer, .globeShadows {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -12,9 +12,9 @@
   position: absolute;
   z-index: 2;
   box-shadow: 
-  inset 20px 0 40px 3px rgba(0, 0, 0, 0.9),
-  inset 14px 0 35px 3px rgba(0, 0, 0, 0.65),
-  inset -2px 0 4px 1px rgba(255, 255, 255, 0.12);
+    inset 2em 0 4em 0.3em rgba(0, 0, 0, 0.9),
+    inset 1.4em 0 3.5em 0.3em rgba(0, 0, 0, 0.65),
+    inset -0.2em 0 0.4em 0.1em rgba(255, 255, 255, 0.12);
 }
 
 .globeImage {

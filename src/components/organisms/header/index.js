@@ -1,11 +1,13 @@
 'use client';
 
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 import { Plane } from '@/components/atoms/plane';
 import { Location } from '@/components/molecules/location';
 import { Socials } from '@/components/molecules/socials';
 import { motion } from 'framer-motion';
 import { useTransitionState } from 'next-transition-router';
+import { fullLogo } from '@/data/assets/logos';
 import styles from './header.module.css';
 
 const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
@@ -18,7 +20,12 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
 
   return (
     <div className={styles.header}>
-      <h2>LOGO HERE</h2>
+      <div className={styles.logo}>
+        <Image 
+          src={fullLogo}
+          alt="What's my country code logo"
+        />
+      </div>
       {isHomeOrAboutPage && <Location
         isCountriesAnimated={isCountriesAnimated}
       />}
@@ -36,7 +43,7 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
 
 Location.propTypes = {
   isHomeOrAboutPage: PropTypes.bool,
-  isCountriesAnimated: PropTypes.bool,
+  isCountriesAnimated: PropTypes.bool
 };
 
 export { Header };

@@ -41,15 +41,22 @@ const Entry = () => {
 export default Entry;
 
 // TO DO
+// BUGS
+// fix side margin of about/home buttons
+// overflows
+// favicon
+// clip path box shadow is making clip path show weird
+// unify titles across all pages
+
+// CONTENT
 // write about page
-// remove mexico page
 // add correct about and home images
+
+// STRETCH
 // get plane arc intro/exit working
 // get entry plane path good
-// fix side margin of about/home buttons
-// box shadow on selected card
-// new colours all over
 // blog page - as scroll background increases in colour?
-// carousel turn up only on cards that have back/project
-// logo on each page
-// favicon
+
+// FINAL
+// remove mexico page
+// HOST

@@ -2,7 +2,7 @@
   position: absolute;
   display: flex;
   width: 100vw;
-  top: var(--plane-top, 56vh);
+  top: var(--plane-top, 62vh);
   justify-content: center;
   z-index: 3;
 }
@@ -11,7 +11,7 @@
   height: 80px;
   transform: rotate(45deg);
   padding-right: 1rem;
-  filter: drop-shadow(1px 4px 4px black);
+  filter: drop-shadow(1px 4px 4px var(--color-black));
 }
 
 .entryTrail {

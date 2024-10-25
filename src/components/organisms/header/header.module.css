@@ -4,7 +4,6 @@
   align-items: center;
   padding: 3rem 0 2rem;
   margin-bottom: 4rem;
-  background-color: var(--color-light-primary);
   border-bottom: 3px dashed var(--color-white);
   color: var(--color-black);
   gap: 1rem;

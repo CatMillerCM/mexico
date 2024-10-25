@@ -11,8 +11,10 @@ import { CardBack } from '@/components/atoms/card-back';
 const Card = ({ countryName, isCentreCard }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const projectExists = Boolean(projects[countryName]);
+
   const handleCardClick = () => {
-    if (!isCentreCard) return;
+    if (!isCentreCard || !projectExists) return;
     setIsFlipped(!isFlipped);
   };
 
@@ -22,30 +24,22 @@ const Card = ({ countryName, isCentreCard }) => {
 
   return (
     <div
-      className={styles.cardContainer}
+      className={`${styles.cardContainer} ${!projectExists && isCentreCard ? styles.noCursor : ''} ${isCentreCard ? styles.centreCard : ''}`}
       onClick={handleCardClick}
     >
       <CardFront
         countryName={countryName}
-        existing={Boolean(projects[countryName])}
+        existing={projectExists}
         isFlipped={isFlipped}
       />
-      {projects[countryName]
-        ?
+      {projectExists &&
         <Link href={`/${countryName.replace(/\s+/g, '-')}`} prefetch>
           <CardBack
             countryName={countryName}
             project={projects[countryName]}
             isFlipped={isFlipped}
-            projectExists
           />
         </Link>
-        :
-        <CardBack
-          countryName={countryName}
-          project={projects[countryName]}
-          isFlipped={isFlipped}
-        />
       }
     </div >
   );

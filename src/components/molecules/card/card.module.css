@@ -5,9 +5,12 @@
   border-radius: 10px;
   position: relative;
   perspective: 1000px;
-  cursor: pointer;
   box-shadow: -2px 2px 20px var(--color-black);
   overflow: visible;
+}
+
+.noCursor {
+  cursor: default;
 }
 
 @media screen and (min-width: 1024px) {

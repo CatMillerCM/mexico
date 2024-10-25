@@ -1,8 +1,8 @@
-import { Instrument_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Providers from "./providers";
 import "./globals.css";
 
-const instrumentSans = Instrument_Sans({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'],
 });
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={instrumentSans.className}>
+      <body className={montserrat.className}>
         <Providers>{children}</Providers>
       </body>
     </html>

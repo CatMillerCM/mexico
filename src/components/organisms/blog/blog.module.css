@@ -54,14 +54,14 @@
   border: none;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 0.75rem var(--color-electric-aqua);
+  box-shadow: 3px 3px 0 var(--color-sunset-orange);
   color: var(--color-black);
   font-weight: bold;
   cursor: pointer;
 }
 
 .hostedLink:hover > button {
-  box-shadow: 0 0 1.5rem var(--color-electric-aqua);
+  box-shadow: 4px 4px 0 var(--color-sunset-orange);
   transform: scale(1.1);
 }
 

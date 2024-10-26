@@ -7,7 +7,11 @@
 .socials img {
   width: 2rem;
   height: 2rem;
-  border: 2px solid var(--color-white);
   border-radius: 50%;
-  box-shadow: -1px 2px 6px var(--color-black);
+  border: 2px solid var(--color-electric-aqua);
+}
+
+.socials a:nth-child(2) img {
+  border: 2px solid var(--color-sunset-orange);
+
 }

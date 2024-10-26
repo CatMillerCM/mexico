@@ -2,36 +2,40 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   width: 100%;
+  overflow-x:hidden;
 }
 
 .link {
-  position: absolute;
-  right: -1.5rem;
   display: flex;
+  transform: translateX(1.25rem);
 }
 
 .link:nth-child(2) {
-  top: 4rem;
+  margin-top: -0.4rem;
 }
 
-.link img:first-child {
+.navName {
   transform: rotate(8deg);
   margin: -0.2rem -0.2rem 0 0;
 }
 
-.link img:nth-child(2) {
+.aboutImage * {
   border-radius: 50% 0 0 50%;
   height: 4rem;
   width: 4rem;
-  box-shadow: -4px 4px 5px var(--color-electric-aqua);
-}
-
-.home img:nth-child(2) {
   box-shadow: -4px 4px 5px var(--color-sunset-orange);
 }
 
+.globe > div {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50% 0 0 50%;
+  box-shadow: -4px 4px 5px var(--color-electric-aqua);
+}
+
 .link:hover {
-  transform: translateX(-1.5rem);
+  transform: translateX(0.25rem);
   transition: 0.5s ease;
 }

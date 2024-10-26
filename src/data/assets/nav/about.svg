@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 10 70" width="40" height="70">
   <path id="curve" d="M 7.5 45 A 25 37.5 0 0 1 20 5" fill="none" stroke="none" stroke-width="1.25"/>
-  <text font-size="12" fill="#05DEFF" font-family="Arial" font-weight="bold">
+  <text font-size="12" fill="#FD9042" font-family="Arial" font-weight="bold">
     <textPath href="#curve" startOffset="50%" text-anchor="middle">about</textPath>
   </text>
 </svg>

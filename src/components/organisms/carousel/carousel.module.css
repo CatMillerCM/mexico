@@ -8,6 +8,7 @@
   position: absolute;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   cursor: pointer;
+  filter: drop-shadow(-2px 2px 20px var(--color-black));
 }
 
 .centerCard {

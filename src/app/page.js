@@ -42,10 +42,7 @@ export default Entry;
 
 // TO DO
 // BUGS
-// fix side margin of about/home buttons
-// overflows
 // favicon
-// clip path box shadow is making clip path show weird
 // unify titles across all pages
 
 // CONTENT

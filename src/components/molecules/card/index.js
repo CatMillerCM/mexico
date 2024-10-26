@@ -24,7 +24,7 @@ const Card = ({ countryName, isCentreCard }) => {
 
   return (
     <div
-      className={`${styles.cardContainer} ${!projectExists && isCentreCard ? styles.noCursor : ''} ${isCentreCard ? styles.centreCard : ''}`}
+      className={`${styles.cardContainer} ${!projectExists && isCentreCard ? styles.noCursor : ''} ${projectExists ? styles.clipPath : ''}`}
       onClick={handleCardClick}
     >
       <CardFront

@@ -21,7 +21,7 @@
   margin: -0.2rem -0.2rem 0 0;
 }
 
-.aboutImage * {
+.aboutImage *, .globe > div {
   border-radius: 50% 0 0 50%;
   height: 4rem;
   width: 4rem;
@@ -29,9 +29,6 @@
 }
 
 .globe > div {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50% 0 0 50%;
   box-shadow: -4px 4px 5px var(--color-electric-aqua);
 }
 

@@ -4,6 +4,8 @@
   align-items: center;
   padding: 0 3rem 2rem;
   gap: 2rem;
+  background: radial-gradient(ellipse at 50% 110%, var(--color-electric-aqua) 0%, var(--color-black) 70%);
+
 }
 
 .intro {
@@ -50,18 +52,18 @@
 }
 
 .hostedLink > button {
-  background: var(--color-electric-aqua);
+  background: var(--color-sunset-orange);
   border: none;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 3px 3px 0 var(--color-sunset-orange);
+  box-shadow: 3px 3px 0 var(--color-black);
   color: var(--color-black);
   font-weight: bold;
   cursor: pointer;
 }
 
 .hostedLink:hover > button {
-  box-shadow: 4px 4px 0 var(--color-sunset-orange);
+  box-shadow: 4px 4px 0 var(--color-black);
   transform: scale(1.1);
 }
 

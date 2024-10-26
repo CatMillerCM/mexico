@@ -6,7 +6,7 @@ import styles from './not-found-ready.module.css';
 const NotFound = () => {
   return (
     <main className={styles.notFound}>
-      <h2 className={styles.uhOh}>Uh oh!</h2>
+      <h1 className={styles.uhOh}>Uh oh!</h1>
       <Image
         src={huhCat}
         alt='Gif of a cat going "huh"'

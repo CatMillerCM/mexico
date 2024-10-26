@@ -43,7 +43,6 @@ export default Entry;
 // TO DO
 // BUGS
 // favicon
-// unify titles across all pages
 
 // CONTENT
 // write about page

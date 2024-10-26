@@ -11,7 +11,7 @@ const Page = () => {
       <Header 
         isHomeOrAboutPage
       />
-      <h2>About</h2>
+      <h1>About</h1>
       <div className={styles.text}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ullamcorper velit, sagittis suscipit massa. Donec faucibus feugiat odio. Sed non sem et dui placerat venenatis. Suspendisse sem ipsum, bibendum ut neque quis, condimentum rhoncus sapien. Donec suscipit fermentum leo a vehicula. Nunc molestie, tortor ac scelerisque commodo, quam odio gravida quam, sit amet ultricies mi tellus sit amet lorem. Suspendisse fermentum id nulla in tempor. Nulla facilisi. Integer at purus et nulla egestas rutrum nec sed mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempus ante eros, id pulvinar risus venenatis eu.</p>
         <p>Duis eu venenatis ligula. Maecenas sodales quam non felis dignissim, a posuere felis vulputate. Nunc efficitur molestie purus a congue. Morbi vel elit urna. Nam in nisl ex. Vivamus ac elementum libero. Nunc ut leo nec justo mattis tempus. Duis libero neque, laoreet sed felis id, imperdiet luctus leo. Etiam in justo porta, pulvinar nunc ut, ultrices mi.</p>

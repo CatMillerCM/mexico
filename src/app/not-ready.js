@@ -6,7 +6,7 @@ import styles from './not-found-ready.module.css';
 const NotReady = () => {
   return (
     <main className={styles.notReady}>
-      <h2 className={styles.uhOh}>Uh oh!</h2>
+      <h1 className={styles.uhOh}>Uh oh!</h1>
       <Image
         src={sideEyeCat}
         alt='Gif of a cat side-eyeing the camera'

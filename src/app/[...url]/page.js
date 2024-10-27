@@ -8,7 +8,7 @@ const Page = ({ params: { url } }) => {
   const countryName = url[0].replace(/-/g, ' ');
 
   return (
-    <main>
+    <main className={styles.page}>
       <Nav
         pageNames={[ "home", "about" ]}
       />

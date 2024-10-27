@@ -1,0 +1,4 @@
+.page {
+  background: radial-gradient(ellipse 100% 200% at 50% 120%, var(--color-sunset-orange) 0%, var(--color-black) 50%);
+  height: 100vh;
+}

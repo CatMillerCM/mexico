@@ -5,7 +5,7 @@ import styles from './card-front.module.css';
 
 const CardFront = ({ countryName, existing, isFlipped }) => {
   return (
-    <div className={`${styles.frontCard} ${isFlipped ? styles.isFlipped : ''}`}>
+    <div className={`${styles.frontCard} ${existing ? styles.clipPath : ''} ${isFlipped ? styles.isFlipped : ''}`}>
       <div className={styles.frontImage}>
         <Image
           src={countryCoverPhotos[countryName]}

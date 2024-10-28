@@ -1,4 +1,4 @@
-import { Nav } from '@/components/atoms/nav';
+import { Nav } from '@/components/molecules/nav';
 import { Header } from '@/components/organisms/header';
 import { Carousel } from '@/components/organisms/carousel';
 import { myCountries } from '@/data';
@@ -11,7 +11,7 @@ const Page = () => {
         pageNames={[ "about" ]}
       />
       <Header
-        isHomeOrAboutPage
+        isHomePage
         isCountriesAnimated
       />
       <Carousel

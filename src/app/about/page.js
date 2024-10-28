@@ -12,7 +12,7 @@ const Page = () => {
         pageNames={[ "home" ]}
       />
       <Header 
-        isHomeOrAboutPage
+        isAboutPage
       />
       <h1>About</h1>
       <div className={styles.content}>

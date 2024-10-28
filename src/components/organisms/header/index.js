@@ -2,6 +2,7 @@
 
 import PropTypes from 'prop-types';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Plane } from '@/components/atoms/plane';
 import { Location } from '@/components/molecules/location';
 import { Socials } from '@/components/molecules/socials';
@@ -10,7 +11,7 @@ import { useTransitionState } from 'next-transition-router';
 import { fullLogo } from '@/data/assets/logos';
 import styles from './header.module.css';
 
-const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
+const Header = ({ isHomePage, isAboutPage, isCountriesAnimated }) => {
   const { stage } = useTransitionState();
 
   const variants = {
@@ -20,13 +21,13 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
+      <Link className={`${styles.logo} ${isHomePage ? styles.noCursor : ''}`} href={`/home`}>
         <Image 
           src={fullLogo}
           alt="What's my country code logo"
         />
-      </div>
-      {isHomeOrAboutPage && <Location
+      </Link>
+      {(isHomePage || isAboutPage) && <Location
         isCountriesAnimated={isCountriesAnimated}
       />}
       <Socials />
@@ -42,7 +43,8 @@ const Header = ({ isHomeOrAboutPage, isCountriesAnimated }) => {
 };
 
 Location.propTypes = {
-  isHomeOrAboutPage: PropTypes.bool,
+  isHomePage: PropTypes.bool,
+  isAboutPage: PropTypes.bool,
   isCountriesAnimated: PropTypes.bool
 };
 

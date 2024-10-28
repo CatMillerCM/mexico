@@ -2,4 +2,15 @@
   height: 100vh;
   width: 100vw;
   background: radial-gradient(ellipse 80% 70% at 50% 75%, var(--color-electric-aqua) 0%, var(--color-black) 70%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.carouselContainer {
+  /* Dynamically set height based on header height */
+  height: calc(100vh - 362.5px); /* Subtract header height from viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the carousel */
 }

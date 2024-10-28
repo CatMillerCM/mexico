@@ -17,5 +17,6 @@
 }
 
 .link {
-  color: var(--color-electric-aqua);
+  color: var(--color-sunset-orange);
+  font-weight: 700;
 }

@@ -2,17 +2,22 @@
   text-align: center;
   background: radial-gradient(ellipse 100% 200% at 50% 120%, var(--color-sunset-orange) 0%, var(--color-black) 50%);
   height: 100%;
+  padding-bottom: 2rem;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 2rem 2rem;
+.content {
+  padding: 0 2rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .about {
-    height: 100vh;
-  }
+.image * {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 5px solid var(--color-electric-aqua);
+  box-shadow: -1px 1px 10px var(--color-black);
+}
+
+.span {
+  color: var(--color-electric-aqua);
+  font-weight: 700;
 }

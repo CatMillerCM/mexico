@@ -1,5 +1,8 @@
-import { Nav } from '@/components/atoms/nav';
+import Image from 'next/image';
+import { Nav } from '@/components/molecules/nav';
 import { Header } from '@/components/organisms/header';
+import { Socials } from '@/components/molecules/socials';
+import { catMiller } from '@/data/assets/nav';
 import styles from './about.module.css';
 
 const Page = () => {
@@ -12,11 +15,30 @@ const Page = () => {
         isHomeOrAboutPage
       />
       <h1>About</h1>
-      <div className={styles.text}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ullamcorper velit, sagittis suscipit massa. Donec faucibus feugiat odio. Sed non sem et dui placerat venenatis. Suspendisse sem ipsum, bibendum ut neque quis, condimentum rhoncus sapien. Donec suscipit fermentum leo a vehicula. Nunc molestie, tortor ac scelerisque commodo, quam odio gravida quam, sit amet ultricies mi tellus sit amet lorem. Suspendisse fermentum id nulla in tempor. Nulla facilisi. Integer at purus et nulla egestas rutrum nec sed mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempus ante eros, id pulvinar risus venenatis eu.</p>
-        <p>Duis eu venenatis ligula. Maecenas sodales quam non felis dignissim, a posuere felis vulputate. Nunc efficitur molestie purus a congue. Morbi vel elit urna. Nam in nisl ex. Vivamus ac elementum libero. Nunc ut leo nec justo mattis tempus. Duis libero neque, laoreet sed felis id, imperdiet luctus leo. Etiam in justo porta, pulvinar nunc ut, ultrices mi.</p>
-        <p>Donec a neque nulla. Duis consequat aliquam augue tincidunt rutrum. Vivamus ut scelerisque dui. In vitae dignissim quam. Suspendisse nec vestibulum ex. Aenean dapibus lectus vel tincidunt semper. Donec egestas purus ac nisl fringilla, nec facilisis lorem gravida. Phasellus rhoncus, urna sed aliquam ullamcorper, enim lorem convallis tellus, quis rhoncus enim velit eget metus. Integer ornare, nunc quis rhoncus commodo, dui lacus suscipit nisl, a sagittis justo lorem quis diam. Integer eget turpis et libero scelerisque viverra. Fusce dignissim dui nec sem accumsan euismod.</p>
-        <p>Vestibulum vel ante eget orci sollicitudin suscipit vitae et justo. In hac habitasse platea dictumst. Donec posuere, libero et eleifend pulvinar, ante velit dapibus lorem, vitae auctor dui erat vitae ante. Maecenas elementum augue a orci vulputate posuere nec nec enim. Nunc aliquam ligula at luctus vestibulum. Curabitur eget nunc id ipsum varius tristique sed ut ante. Vivamus mollis sollicitudin urna, eget dignissim urna sollicitudin eget.</p>
+      <div className={styles.content}>
+        <h3>Hey there!</h3>
+        <p>I’m Cat, a 29-year-old software engineer from the UK, <br></br>
+        and I’m fortunate enough to currently be travelling Latin America.</p>
+      <div className={styles.image}>
+        <Image
+          src={catMiller}
+          alt='Image of Cat Miller'
+        />
+      </div>
+        <p>Having a passion for coding, I’m keen to keep up and expand my skills while I’m on the road and soaking up new experiences.</p>
+        <p>This is why I’ve built <span className={styles.span}>What’s My Country Code?</span>.</p>
+        <p>I’m challenging myself to create a fun, novelty project inspired by each country I visit, and this website will be my creative playground.</p>
+        <p>My mini app could be based around culture, food, locations, the people I meet, or my own adventures. <br></br>
+        Each one will be a little piece of my journey!</p>
+        <p>When I’ve completed a country (both geographically and technologically!), I’ll upload it to the respective country carousel card and page. <br></br>
+        In addition to hosting the app so you can have a real play, I’ll also share some of my highlights from that location, my key inspirations, and, if you’re lucky, some photos as well!</p>
+        <p>I hope you all enjoy my silly creations likely conjured up in airport gates, ferry terminals, hostel rooms, on overnight bus journeys, and maybe even when swinging in a tranquil hammock on a beach…</p>
+        <p>If you have any ideas or improvements for <span className={styles.span}>What’s My Country Code?</span> and its spawns, or simply want to connect, please do reach out on any of the below! <br></br>
+        You can also browse all of the country codes on my Github.</p>
+        <Socials/>
+        <p>Or, if you’re lucky enough to be my pal, pop me a WhatsApp of course!</p>
+        <p>Thanks so much for coming on this journey with me! <br></br>
+        Follow along to see where I go next!</p>
       </div>
     </main>
   );

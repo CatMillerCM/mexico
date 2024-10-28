@@ -23,7 +23,7 @@ const Nav = ({ pageNames }) => {
           : <div className={styles.aboutImage}>
             <Image
               src={catMiller}
-              alt={'Image of Cat Miller to navigate to "About"'}
+              alt='Image of Cat Miller to navigate to "About"'
             />
           </div>
           }

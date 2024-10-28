@@ -1,4 +1,4 @@
-import { Nav } from '@/components/atoms/nav';
+import { Nav } from '@/components/molecules/nav';
 import { Header } from '@/components/organisms/header';
 import { Blog } from '@/components/organisms/blog';
 import { projects } from '@/data/projects';

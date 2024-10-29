@@ -43,15 +43,11 @@ export default Entry;
 // TO DO
 // BUGS
 // favicon
+// carousel overflow rihgt and bottom
+// centre carousel in bottom section
 
 // CONTENT
-// write about page
-// add correct about and home images
-
-// STRETCH
-// get plane arc intro/exit working
-// get entry plane path good
-// blog page - as scroll background increases in colour?
+// add correct about image
 
 // FINAL
 // remove mexico page

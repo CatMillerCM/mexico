@@ -2,7 +2,7 @@
   overflow: hidden;
   max-height: 3rem;
   width: 100dvw;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .countryList {
@@ -38,5 +38,11 @@
 
   50% {
     transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .countryTicker {
+    font-size: 1.5rem;
   }
 }

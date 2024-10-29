@@ -5,8 +5,8 @@
 }
 
 .socials img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   border: 2px solid var(--color-electric-aqua);
   box-shadow: -1px 1px 10px var(--color-black);
@@ -14,5 +14,11 @@
 
 .socials a:nth-child(2) img {
   border: 2px solid var(--color-sunset-orange);
+}
 
+@media screen and (min-width: 1024px) {
+  .socials img {
+    width: 2rem;
+    height: 2rem;
+  }
 }

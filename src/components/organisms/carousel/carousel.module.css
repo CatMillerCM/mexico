@@ -1,6 +1,7 @@
 .carousel {
   display: flex;
   justify-content: center;
+  margin-top: -1rem;
 }
 
 .card {
@@ -45,6 +46,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .carousel {
+    margin-top: 0;
+  }
+
   .leftCard {
     transform: translateX(-250px) scale(0.8) rotate(-10deg) translateY(20px);
   }

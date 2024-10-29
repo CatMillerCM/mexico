@@ -10,8 +10,14 @@
 }
 
 .currentCountry {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-bottom: 1rem;
   font-weight: 600;
   text-shadow: 1px 1px 0 var(--color-electric-aqua);
+}
+
+@media screen and (min-width: 1024px) {
+  .currentCountry {
+    font-size: 1.5rem;
+  }
 }

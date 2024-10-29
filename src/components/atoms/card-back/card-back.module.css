@@ -26,16 +26,17 @@
 .backTitle {
   text-transform: capitalize;
   margin: 2rem 0 0;
+  font-size: 1rem;
 }
 
 .projectTitle {
   margin: 0 0 1rem;
+  font-size: 1.5rem;
 }
 
 .backImage {
   width: 80%;
   height: 30%;
-  min-height: 10rem;
   position: relative;
   border-radius: 10px;
   border: 5px solid var(--color-sunset-orange);
@@ -44,11 +45,12 @@
 
 .summary {
   padding: 0 1rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 
 .readMore {
+  font-size: 0.75rem;
   text-decoration: underline;
   margin: 0 0 2rem;
   color: var(--color-sunset-orange);
@@ -75,6 +77,10 @@
 
   .summary {
     padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .readMore {
     font-size: 1rem;
   }
 }

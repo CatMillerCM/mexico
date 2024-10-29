@@ -15,7 +15,7 @@
 }
 
 .entryTrail {
-  animation: entry-trail 6s linear forwards 1s;
+  animation: entry-trail 5s linear forwards 2s;
 }
 
 @keyframes entry-trail {

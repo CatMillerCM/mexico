@@ -28,14 +28,14 @@
   background-position: 0 0, 20px 80px, 10px 250px, 100px 10px;
   opacity: 0;
   z-index: -1;
-  animation: fade-stars 6s ease-in forwards 1s;
+  animation: fade-stars 5s ease-in forwards 2s;
 }
 
 .sections {
   display: flex;
   position: relative;
   align-items: center;
-  animation: move-page 4s forwards 1s;
+  animation: move-page 3s ease-in forwards 2s;
 }
 
 .entry {
@@ -47,7 +47,7 @@
 
 .globe {
   height: 100%;
-  animation: scale-globe 6s ease-in forwards 1.5s;
+  animation: scale-globe 5s ease-in forwards 2.5s;
 }
 
 .logo {
@@ -57,7 +57,7 @@
   margin: -7.5rem 0 5rem;
   z-index: 3;
   gap: 1.7rem;
-  animation: move-off-page 4s forwards 1s;
+  animation: move-off-page 3s forwards 2s;
 }
 
 .logo *:first-child {

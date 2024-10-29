@@ -8,7 +8,7 @@
   color: var(--color-black);
   gap: 1rem;
 
-  --plane-top: -1vh;
+  --plane-top: -1dvh;
 }
 
 .logo * {

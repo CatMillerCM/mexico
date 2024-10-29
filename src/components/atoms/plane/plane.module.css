@@ -1,7 +1,7 @@
 .planeDiv {
   position: absolute;
   display: flex;
-  width: 100vw;
+  width: 100dvw;
   top: var(--plane-top, 62vh);
   justify-content: center;
   z-index: 3;

@@ -35,6 +35,7 @@
 .backImage {
   width: 80%;
   height: 30%;
+  min-height: 10rem;
   position: relative;
   border-radius: 10px;
   border: 5px solid var(--color-sunset-orange);

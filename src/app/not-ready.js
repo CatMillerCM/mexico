@@ -13,7 +13,7 @@ const NotReady = () => {
         unoptimized
       />
       <div>
-        <p className={styles.firstLine}>Looks like there's nothing here... yet.</p>
+        <p className={styles.firstLine}>Looks like there&apos;s nothing here... yet.</p>
         <p>Pack your bags and check back soon.</p>
         <p>In the meantime, head <Link href='/home' className={styles.link}>home</Link> for a rest!</p>
       </div>

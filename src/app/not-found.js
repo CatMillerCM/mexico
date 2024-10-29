@@ -13,7 +13,7 @@ const NotFound = () => {
         unoptimized
       />
       <div>
-        <p>Seems like you've travelled too far and got lost!</p>
+        <p>Seems like you&apos;ve travelled too far and got lost!</p>
         <p>Head <Link href='/home' className={styles.link}>home</Link> before visiting a new country!</p>
       </div>
     </main>

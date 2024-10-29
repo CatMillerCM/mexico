@@ -17,7 +17,7 @@ const Entry = () => {
     setTimeout(() => {
       router.push('/home');
     }, 6000);
-  }, []);
+  }, [router]);
 
   return (
     <main className={styles.main}>
@@ -28,8 +28,8 @@ const Entry = () => {
             <Globe />
           </div>
           <div className={styles.logo}>
-            <Image src={condensedLogo} alt="What's my country code condensed logo"/>
-            <Image src={fullLogo} alt="What's my country code logo"/>
+            <Image src={condensedLogo} alt="What's my country code condensed logo" />
+            <Image src={fullLogo} alt="What's my country code logo" />
           </div>
         </div>
         <Plane entry />

@@ -13,8 +13,8 @@ const Blog = ({ countryName, project }) => {
   if (!project) {
     return (
       allCountries.includes(countryName)
-        ? <NotReady/>
-        : <NotFound/>
+        ? <NotReady />
+        : <NotFound />
     )
   }
 
@@ -28,8 +28,8 @@ const Blog = ({ countryName, project }) => {
       <div className={styles.inspirationImages}>
         {project.inspirationImages.map((image) => {
           return (
-            <div className={styles.image}>
-              <Image 
+            <div className={styles.image} key={image.src}>
+              <Image
                 src={image.src}
                 alt={image.alt}
                 objectFit="cover"
@@ -43,8 +43,8 @@ const Blog = ({ countryName, project }) => {
       <div className={styles.projectImages}>
         {project.projectImages.map((image) => {
           return (
-            <div className={styles.image}>
-              <Image 
+            <div className={styles.image} key={image.src}>
+              <Image
                 src={image.src}
                 alt={image.alt}
                 width={200}

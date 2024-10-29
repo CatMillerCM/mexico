@@ -10,7 +10,7 @@
 .plane {
   height: 80px;
   transform: rotate(45deg);
-  padding-right: 1rem;
+  padding-right: 1.5rem;
   filter: drop-shadow(1px 4px 4px var(--color-black));
 }
 

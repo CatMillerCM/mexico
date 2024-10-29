@@ -12,6 +12,7 @@ const CardFront = ({ countryName, existing, isFlipped }) => {
           alt={`Cover image of ${countryName}`}
           layout="fill"
           objectFit="cover"
+          priority={true}
         />
       </div>
       <div className={styles.frontTitle}>

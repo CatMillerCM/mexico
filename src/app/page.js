@@ -28,8 +28,16 @@ const Entry = () => {
             <Globe />
           </div>
           <div className={styles.logo}>
-            <Image src={condensedLogo} alt="What's my country code condensed logo" />
-            <Image src={fullLogo} alt="What's my country code logo" />
+            <Image
+              src={condensedLogo}
+              alt="What's my country code condensed logo"
+              priority={true}
+            />
+            <Image
+              src={fullLogo}
+              alt="What's my country code logo"
+              priority={true}
+            />
           </div>
         </div>
         <Plane entry />

@@ -33,6 +33,7 @@ const Blog = ({ countryName, project }) => {
                 src={image.src}
                 alt={image.alt}
                 objectFit="cover"
+                priority={true}
               />
               <p className={styles.caption}>{image.caption}</p>
             </div>

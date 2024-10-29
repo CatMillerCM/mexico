@@ -10,6 +10,9 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "What's my country code?",
   description: "A fun portfolio of coding projects inspired by countries I visit on my travels",
+  icons: {
+    icon: '/favicon.ico'
+  },
 };
 
 export default function RootLayout({ children }) {

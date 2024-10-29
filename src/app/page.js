@@ -42,8 +42,7 @@ export default Entry;
 
 // TO DO
 // BUGS
-// favicon
-// carousel overflow rihgt and bottom
+// carousel overflow right and bottom
 // centre carousel in bottom section
 
 // CONTENT

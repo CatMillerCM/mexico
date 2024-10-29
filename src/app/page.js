@@ -39,15 +39,3 @@ const Entry = () => {
 }
 
 export default Entry;
-
-// TO DO
-// BUGS
-// carousel overflow right and bottom
-// centre carousel in bottom section
-
-// CONTENT
-// add correct about image
-
-// FINAL
-// remove mexico page
-// HOST

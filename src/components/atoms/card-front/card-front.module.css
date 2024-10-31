@@ -35,14 +35,14 @@
 }
 
 .frontTitle h2 {
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: bold;
   text-shadow: 2px 2px 10px var(--color-black);
   margin-bottom: 0;
 }
 
 .frontTitle p {
-  font-size: 12px;
+  font-size: 1rem;
   text-shadow: 2px 2px 10px var(--color-black);
 }
 

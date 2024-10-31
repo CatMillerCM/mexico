@@ -25,13 +25,13 @@
 
 .backTitle {
   text-transform: capitalize;
-  margin: 1rem 0 0;
-  font-size: 1rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.25rem;
 }
 
 .projectTitle {
   margin: 0 0 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .backImage {
@@ -50,14 +50,14 @@
 
 .summary {
   padding: 0 1rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 .readMore {
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-decoration: underline;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   color: var(--color-sunset-orange);
 }
 
@@ -83,11 +83,9 @@
 
   .summary {
     padding: 0 2rem;
-    font-size: 1rem;
   }
 
   .readMore {
-    font-size: 1rem;
     margin: 0 0 2rem;
   }
 }

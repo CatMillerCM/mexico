@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .starryNight {
     background-size: 1000px 1000px, 550px 550px, 350px 350px, 450px 450px; 
     background-position: 0 0, 120px 180px, 90px 140px, 300px 90px;

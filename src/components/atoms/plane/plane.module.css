@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .planeDiv {
     margin-top: 0;
   }

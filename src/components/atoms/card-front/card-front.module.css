@@ -63,7 +63,7 @@
   transform: rotateY(-180deg);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .frontTitle h2 {
     font-size: 50px;
   }

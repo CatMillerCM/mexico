@@ -37,6 +37,7 @@
 .backImage {
   aspect-ratio: 1 / 1;
   height: 30%;
+  max-width: 80%;
   position: relative;
   border-radius: 10px;
   border: 3px solid var(--color-sunset-orange);
@@ -64,7 +65,7 @@
   transform: rotateY(0deg);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .backTitle {
     font-size: 1.5rem;
     margin: 3rem 0 0;

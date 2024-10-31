@@ -16,7 +16,7 @@
   border: 2px solid var(--color-sunset-orange);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .socials img {
     width: 2rem;
     height: 2rem;

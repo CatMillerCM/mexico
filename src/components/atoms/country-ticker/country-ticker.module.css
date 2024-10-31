@@ -42,12 +42,12 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .countryTicker {
     font-size: 1.5rem;
   }
 
   .countryList p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0.1rem
   }
 }

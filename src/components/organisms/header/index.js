@@ -30,7 +30,6 @@ const Header = ({ isHomePage, isAboutPage, isCountriesAnimated, countryName }) =
       {(isHomePage || isAboutPage) && <Location
         isCountriesAnimated={isCountriesAnimated}
       />}
-      <Socials />
       {!!countryName && <h2 className={styles.countryName}>{countryName}</h2>}
       <motion.div
         initial={{ translateX: '-100vw' }}

@@ -21,3 +21,9 @@
   color: var(--color-electric-aqua);
   font-weight: 700;
 }
+
+.link {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-weight: 700;
+}

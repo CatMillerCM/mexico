@@ -8,7 +8,7 @@
   gap: 0.75rem;
   margin-bottom: 2.5rem;
 
-  --plane-top: -1dvh;
+  --plane-top: -0.25rem;
 }
 
 .logo * {

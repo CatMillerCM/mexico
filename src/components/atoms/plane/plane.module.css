@@ -2,52 +2,63 @@
   position: absolute;
   display: flex;
   width: 100dvw;
-  top: var(--plane-top, 62vh);
+  top: var(--plane-top, 34rem);
   justify-content: center;
   z-index: 5;
   margin-top: -0.5rem;
+  transform: rotate(45deg);
 }
 
 .plane {
   height: 70px;
-  transform: rotate(45deg);
   padding-right: 1rem;
   filter: drop-shadow(1px 4px 4px var(--color-black));
 }
 
 .entryTrail {
-  animation: entry-trail 4s linear forwards 1s;
+  animation: entry-trail 4s linear forwards 1.5s;
 }
 
 @keyframes entry-trail {
   0% {
-    transform: translateY(0) rotate(45deg);
+    top: 34rem;
+    transform: rotate(45deg);
   }
 
-  12% {
-    transform: translateY(-3rem) rotate(22deg);
+  15% {
+    top: 31rem;
+    transform: rotate(33deg);
   }
 
-  25% {
-    transform: translateY(-6rem) rotate(10deg);
+  30% {
+    top: 28rem;
+    transform: rotate(22deg);
   }
 
-  37% {
-    transform: translateY(-9rem) rotate(22deg);
+  45% {
+    top: 22rem;
+    transform: rotate(10deg);
   }
 
-  50% {
-    transform: translateY(-12rem) rotate(45deg);
+  60% {
+    top: 16rem;
+    transform: rotate(22deg);
+  }
+
+  75% {
+    top: 10rem;
+    transform: rotate(45deg);
   }
 
   100% {
-    transform: translateX(60vw) translateY(-12rem) rotate(45deg);
+    top: 10rem;
+    transform: translateX(60vw) rotate(45deg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .planeDiv {
-    margin-top: 0;
+    top: var(--plane-top, 38rem);
   }
 
   .plane {
@@ -56,27 +67,38 @@
 
   @keyframes entry-trail {
     0% {
-      transform: translateY(0) rotate(45deg);
+      top: 38rem;
+      transform: rotate(45deg);
     }
   
-    12% {
-      transform: translateY(-6rem) rotate(22deg);
+    15% {
+      top: 34.635rem;
+      transform: rotate(33deg);
     }
   
-    25% {
-      transform: translateY(-12rem) rotate(10deg);
+    30% {
+      top: 31.25rem;
+      transform: rotate(22deg);
     }
   
-    37% {
-      transform: translateY(-18rem) rotate(22deg);
+    45% {
+      top: 24.5rem;
+      transform: rotate(10deg);
     }
   
-    50% {
-      transform: translateY(-24rem) rotate(45deg);
+    60% {
+      top: 17.75rem;
+      transform: rotate(22deg);
+    }
+  
+    75% {
+      top: 11rem;
+      transform: rotate(45deg);
     }
   
     100% {
-      transform: translateX(60vw) translateY(-24rem) rotate(45deg);
+      top: 11rem;
+      transform: translateX(60vw) rotate(45deg);
     }
   }
 }

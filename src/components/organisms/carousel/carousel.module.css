@@ -35,6 +35,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .carousel {
+    margin-top: 2rem;
+  }
+
   .leftCard {
     transform: translateX(-200px) scale(0.8) rotate(-10deg) translateY(20px);
   }
@@ -45,10 +49,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .carousel {
-    margin-top: 0;
-  }
-
   .leftCard {
     transform: translateX(-250px) scale(0.8) rotate(-10deg) translateY(20px);
   }

@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Plane } from '@/components/atoms/plane';
 import { Location } from '@/components/molecules/location';
-import { Socials } from '@/components/molecules/socials';
 import { motion } from 'framer-motion';
 import { useTransitionState } from 'next-transition-router';
 import { fullLogo } from '@/data/assets/logos';

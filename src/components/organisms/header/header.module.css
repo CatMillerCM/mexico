@@ -11,9 +11,12 @@
   --plane-top: -0.25rem;
 }
 
+.logo {
+  z-index: 6;
+}
+
 .logo * {
   height: 3rem;
-  z-index: 5;
 }
 
 .noCursor {

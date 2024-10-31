@@ -38,7 +38,7 @@ const Page = () => {
         <p>I hope you all enjoy my silly creations likely conjured up in airport gates, ferry terminals, hostel rooms, on overnight bus journeys, and maybe even when swinging in a tranquil hammock on a beach…</p>
         <p>If you have any ideas or improvements for <span className={styles.span}>What’s My Country Code?</span> and its spawns, or simply want to connect, please do reach out on any of my socials linked above. <br></br>
         Or, if you’re lucky enough to be my pal, pop me a WhatsApp of course!</p>
-        <p>You can also browse all of the country codes on my <Link className={styles.link} href="https://github.com/CatMillerCM">Github</Link>.</p>
+        <p>You can also browse all of the country codes on my <Link className={styles.link} href="https://github.com/CatMillerCM" target="_blank"> Github</Link>.</p>
         <p>Thanks so much for coming on this journey with me! <br></br>
           Follow along to see where I go next!</p>
       </div>

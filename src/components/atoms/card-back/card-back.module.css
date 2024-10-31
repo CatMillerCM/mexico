@@ -17,6 +17,7 @@
   cursor: pointer;
   color: var(--color-white);
   text-align: center;
+  box-shadow: 1px 1px 20px var(--color-electric-aqua);
 }
 
 .titles {
@@ -36,7 +37,7 @@
 
 .backImage {
   aspect-ratio: 1 / 1;
-  height: 30%;
+  height: 40%;
   max-width: 80%;
   position: relative;
   border-radius: 10px;

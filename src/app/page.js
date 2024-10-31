@@ -12,8 +12,6 @@ const Entry = () => {
   const router = useTransitionRouter();
 
   useEffect(() => {
-    router.prefetch('/home');
-
     setTimeout(() => {
       router.push('/home');
     }, 5000);

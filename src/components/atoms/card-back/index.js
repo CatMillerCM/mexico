@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import Image from 'next/image';
-import codingCat from '@/data/assets/cat-gifs/coding-cat.gif';
 import styles from './card-back.module.css';
 
 const CardBack = ({ countryName, project, isFlipped }) => {

@@ -1,9 +1,9 @@
-import belizePhoto from './belize.jpg';
-import brazilPhoto from './brazil.jpg';
-import costaRicaPhoto from './costa-rica.jpg';
-import guatemalaPhoto from './guatemala.jpg';
-import mexicoPhoto from './mexico.jpg'
-import unitedKingdomPhoto from './united-kingdom.jpg';
+import belizePhoto from './belize.webp';
+import brazilPhoto from './brazil.webp';
+import costaRicaPhoto from './costa-rica.webp';
+import guatemalaPhoto from './guatemala.webp';
+import mexicoPhoto from './mexico.webp'
+import unitedKingdomPhoto from './united-kingdom.webp';
 
 const countryCoverPhotos = {
   belize: belizePhoto,

@@ -1,6 +1,7 @@
 .about {
   text-align: center;
-  background: radial-gradient(ellipse 100% 230% at 50% 120%, var(--color-sunset-orange) 0%, var(--color-black) 50%);
+  background: radial-gradient(ellipse 120% 120% at 50% 120%, var(--color-sunset-orange) 0%, var(--color-black) 50%);
+  background-attachment: fixed;
   height: 100%;
   padding-bottom: 2rem;
 }

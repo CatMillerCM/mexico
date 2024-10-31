@@ -28,7 +28,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-transform: capitalize;
   text-align: center;
   color: var(--color-white);
   width: 85%;
@@ -36,13 +35,15 @@
 
 .frontTitle h2 {
   font-size: 2rem;
+  text-transform: capitalize;
   font-weight: bold;
   text-shadow: 2px 2px 10px var(--color-black);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .frontTitle p {
   font-size: 1rem;
+  margin: 0;
   text-shadow: 2px 2px 10px var(--color-black);
 }
 

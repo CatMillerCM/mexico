@@ -16,6 +16,7 @@ const CardFront = ({ countryName, existing, isFlipped }) => {
         />
       </div>
       <div className={styles.frontTitle}>
+        {existing && <p>My project inspired by</p>}
         <h2>{countryName}</h2>
         {!existing && <p>Coming soon!</p>}
       </div>

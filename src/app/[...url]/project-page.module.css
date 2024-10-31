@@ -1,4 +1,5 @@
 .page {
-  background: radial-gradient(ellipse 100% 230% at 50% 120%, var(--color-electric-aqua) 0%, var(--color-black) 50%);
+  background: radial-gradient(ellipse 120% 120% at 50% 120%, var(--color-electric-aqua) 0%, var(--color-black) 50%);
+  background-attachment: fixed;
   min-height: 100dvh;
 }

@@ -1,9 +1,18 @@
 .about {
   text-align: center;
-  background: radial-gradient(ellipse 120% 120% at 50% 120%, var(--color-sunset-orange) 0%, var(--color-black) 50%);
-  background-attachment: fixed;
   height: 100%;
   padding-bottom: 2rem;
+}
+
+.about::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse 120% 120% at 50% 120%, var(--color-sunset-orange) 0%, var(--color-black) 50%);
+  z-index: -1;
 }
 
 .content {

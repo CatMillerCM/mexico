@@ -30,7 +30,7 @@ const Page = () => {
         </div>
         <p>Having a passion for coding, I’m keen to keep up and expand my skills while I’m on the road and soaking up new experiences.</p>
         <p>This is why I’ve built <span className={styles.span}>What’s My Country Code?</span>.</p>
-        <p>I’m challenging myself to create a fun, novelty project inspired by each country I visit, and this website will be my creative playground.</p>
+        <p>I’m challenging myself to develop a fun, novelty project inspired by each country I visit, and this website will be my creative playground.</p>
         <p>My mini app could be based around culture, food, locations, the people I meet, or my own adventures. <br></br>
           Each one will be a little piece of my journey!</p>
         <p>When I’ve completed a country (both geographically and technologically!), I’ll upload it to the respective country carousel card and page. <br></br>
@@ -38,7 +38,7 @@ const Page = () => {
         <p>I hope you all enjoy my silly creations likely conjured up in airport gates, ferry terminals, hostel rooms, on overnight bus journeys, and maybe even when swinging in a tranquil hammock on a beach…</p>
         <p>If you have any ideas or improvements for <span className={styles.span}>What’s My Country Code?</span> and its spawns, or simply want to connect, please do reach out on any of my socials linked above. <br></br>
         Or, if you’re lucky enough to be my pal, pop me a WhatsApp of course!</p>
-        <p>You can also browse all of the country codes on my <Link className={styles.link} href="https://github.com/CatMillerCM" target="_blank"> Github</Link>.</p>
+        <p>You can also browse all completed country codes on my <Link className={styles.link} href="https://github.com/CatMillerCM" target="_blank"> Github</Link>.</p>
         <p>Thanks so much for coming on this journey with me! <br></br>
           Follow along to see where I go next!</p>
       </div>

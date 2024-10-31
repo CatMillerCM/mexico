@@ -25,22 +25,26 @@
 
 .backTitle {
   text-transform: capitalize;
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   font-size: 1rem;
 }
 
 .projectTitle {
   margin: 0 0 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .backImage {
-  width: 80%;
+  aspect-ratio: 1 / 1;
   height: 30%;
   position: relative;
   border-radius: 10px;
-  border: 5px solid var(--color-sunset-orange);
+  border: 3px solid var(--color-sunset-orange);
   box-shadow: -1px 1px 10px var(--color-black);
+}
+
+.backImage img {
+  border-radius: 7px;
 }
 
 .summary {
@@ -52,7 +56,7 @@
 .readMore {
   font-size: 0.75rem;
   text-decoration: underline;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   color: var(--color-sunset-orange);
 }
 
@@ -73,6 +77,7 @@
 
   .backImage {
     height: 50%;
+    border: 5px solid var(--color-sunset-orange);
   }
 
   .summary {
@@ -82,5 +87,6 @@
 
   .readMore {
     font-size: 1rem;
+    margin: 0 0 2rem;
   }
 }

@@ -6,7 +6,7 @@ import styles from './location.module.css';
 const Location = ({ isCountriesAnimated = false }) => {
   return (
     <div className={styles.location}>
-      <p>I am currently in</p>
+      <p className={styles.text}>I am currently in</p>
       {isCountriesAnimated ? <CountryTicker /> : <p className={styles.currentCountry}>{currentCountry}</p>}
     </div>
   )

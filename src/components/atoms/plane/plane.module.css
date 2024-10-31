@@ -5,17 +5,18 @@
   top: var(--plane-top, 62vh);
   justify-content: center;
   z-index: 5;
+  margin-top: -0.5rem;
 }
 
 .plane {
   height: 70px;
   transform: rotate(45deg);
-  padding-right: 1.5rem;
+  padding-right: 1rem;
   filter: drop-shadow(1px 4px 4px var(--color-black));
 }
 
 .entryTrail {
-  animation: entry-trail 5s linear forwards 2s;
+  animation: entry-trail 5.5s linear forwards 1.5s;
 }
 
 @keyframes entry-trail {
@@ -45,6 +46,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .planeDiv {
+    margin-top: 0;
+  }
+
   .plane {
     height: 80px;
   }

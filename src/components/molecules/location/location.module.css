@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   color: var(--color-white);
+  height: 3rem;
+}
+
+.text {
+  font-size: 14px;
 }
 
 .location p {
@@ -11,7 +16,7 @@
 
 .currentCountry {
   font-size: 1.25rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   font-weight: 600;
   text-shadow: 1px 1px 0 var(--color-electric-aqua);
 }

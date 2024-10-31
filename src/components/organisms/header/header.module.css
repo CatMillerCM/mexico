@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0 2rem;
-  margin-bottom: 4rem;
+  padding: 2.5rem 0 1.5rem;
   border-bottom: 3px dashed var(--color-white);
   color: var(--color-black);
   gap: 0.75rem;
+  margin-bottom: 2.5rem;
 
   --plane-top: -1dvh;
 }
 
 .logo * {
-  height: 3.5rem;
+  height: 3rem;
   z-index: 5;
 }
 
@@ -23,5 +23,11 @@
 @media screen and (min-width: 1024px) {
   .header {
     gap: 1rem;
+    padding: 2.5rem 0 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo * {
+    height: 3.5rem;
   }
 }

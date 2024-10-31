@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import worldMap from '@/data/assets/world-map.png';
+import worldMap from '@/data/assets/world-map.webp';
 import styles from './globe.module.css';
 
 const Globe = () => {

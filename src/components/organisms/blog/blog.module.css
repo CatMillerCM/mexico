@@ -10,11 +10,6 @@
   text-align: center;
 }
 
-.countryName {
-  text-transform: capitalize;
-  margin: 1rem 0 0;
-}
-
 .projectName {
   margin: 0.5rem 0 2rem;
 }

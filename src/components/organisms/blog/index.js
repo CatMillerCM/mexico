@@ -21,7 +21,6 @@ const Blog = ({ countryName, project }) => {
   return (
     <div className={styles.blog}>
       <div className={styles.intro}>
-        <h2 className={styles.countryName}>{countryName}</h2>
         <h1 className={styles.projectName}>{project.projectName}</h1>
         <p>{project.projectIntro}</p>
       </div>

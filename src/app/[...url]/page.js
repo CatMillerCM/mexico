@@ -12,7 +12,9 @@ const Page = ({ params: { url } }) => {
       <Nav
         pageNames={[ "home", "about" ]}
       />
-      <Header />
+      <Header 
+        countryName={countryName}
+      />
       <Blog 
         countryName={countryName}
         project={projects[countryName]}

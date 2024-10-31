@@ -11,7 +11,7 @@ import { useTransitionState } from 'next-transition-router';
 import { fullLogo } from '@/data/assets/logos';
 import styles from './header.module.css';
 
-const Header = ({ isHomePage, isAboutPage, isCountriesAnimated }) => {
+const Header = ({ isHomePage, isAboutPage, isCountriesAnimated, countryName }) => {
   const { stage } = useTransitionState();
 
   const variants = {
@@ -31,6 +31,7 @@ const Header = ({ isHomePage, isAboutPage, isCountriesAnimated }) => {
         isCountriesAnimated={isCountriesAnimated}
       />}
       <Socials />
+      {!!countryName && <h2 className={styles.countryName}>{countryName}</h2>}
       <motion.div
         initial={{ translateX: '-100vw' }}
         animate={stage === 'leaving' ? variants.leaving : variants.entering}
@@ -45,7 +46,8 @@ const Header = ({ isHomePage, isAboutPage, isCountriesAnimated }) => {
 Location.propTypes = {
   isHomePage: PropTypes.bool,
   isAboutPage: PropTypes.bool,
-  isCountriesAnimated: PropTypes.bool
+  isCountriesAnimated: PropTypes.bool,
+  countryName: PropTypes.string
 };
 
 export { Header };

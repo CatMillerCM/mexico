@@ -3,21 +3,9 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Image from 'next/image';
-import NotReady from '@/app/not-ready';
-import NotFound from '@/app/not-found';
-import { allCountries } from '@/data';
 import styles from './blog.module.css';
 
-const Blog = ({ countryName, project }) => {
-
-  if (!project) {
-    return (
-      allCountries.includes(countryName)
-        ? <NotReady />
-        : <NotFound />
-    )
-  }
-
+const Blog = ({ project }) => {
   return (
     <div className={styles.blog}>
       <div className={styles.intro}>

@@ -16,7 +16,7 @@
 }
 
 .entryTrail {
-  animation: entry-trail 5.5s linear forwards 1.5s;
+  animation: entry-trail 4s linear forwards 1s;
 }
 
 @keyframes entry-trail {
@@ -25,23 +25,23 @@
   }
 
   12% {
-    transform: translateY(-5rem) rotate(22deg);
+    transform: translateY(-3rem) rotate(22deg);
   }
 
   25% {
-    transform: translateY(-10rem) rotate(10deg);
+    transform: translateY(-6rem) rotate(10deg);
   }
 
   37% {
-    transform: translateY(-15rem) rotate(22deg);
+    transform: translateY(-9rem) rotate(22deg);
   }
 
   50% {
-    transform: translateY(-20rem) rotate(45deg);
+    transform: translateY(-12rem) rotate(45deg);
   }
 
   100% {
-    transform: translateX(60vw) translateY(-20rem) rotate(45deg);
+    transform: translateX(60vw) translateY(-12rem) rotate(45deg);
   }
 }
 
@@ -52,5 +52,31 @@
 
   .plane {
     height: 80px;
+  }
+
+  @keyframes entry-trail {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+  
+    12% {
+      transform: translateY(-6rem) rotate(22deg);
+    }
+  
+    25% {
+      transform: translateY(-12rem) rotate(10deg);
+    }
+  
+    37% {
+      transform: translateY(-18rem) rotate(22deg);
+    }
+  
+    50% {
+      transform: translateY(-24rem) rotate(45deg);
+    }
+  
+    100% {
+      transform: translateX(60vw) translateY(-24rem) rotate(45deg);
+    }
   }
 }

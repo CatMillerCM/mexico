@@ -16,7 +16,7 @@ const Entry = () => {
 
     setTimeout(() => {
       router.push('/home');
-    }, 6000);
+    }, 5000);
   }, [router]);
 
   return (

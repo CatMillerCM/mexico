@@ -13,7 +13,7 @@ const Location = ({ isCountriesAnimated = false }) => {
 };
 
 Location.propTypes = {
-  isCountriesAnimated: PropTypes.bool,
+  isCountriesAnimated: PropTypes.bool
 };
 
 export { Location };

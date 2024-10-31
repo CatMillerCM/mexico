@@ -27,7 +27,7 @@ const CardBack = ({ countryName, project, isFlipped }) => {
 CardBack.propTypes = {
   countryName: PropTypes.string.isRequired,
   project: PropTypes.object,
-  isFlipped: PropTypes.bool.isRequired,
+  isFlipped: PropTypes.bool.isRequired
 };
 
 export { CardBack };

@@ -29,7 +29,7 @@ const Page = () => {
           />
         </div>
         <p>Having a passion for coding, I’m keen to keep up and expand my skills while I’m on the road and soaking up new experiences.</p>
-        <p>This is why I’ve built <span className={styles.span}>What’s My Country Code?</span>.</p>
+        <p>This is why I’ve built <span className={styles.span}>What’s My Country Code?</span></p>
         <p>I’m challenging myself to develop a fun, novelty project inspired by each country I visit, and this website will be my creative playground.</p>
         <p>My mini app could be based around culture, food, locations, the people I meet, or my own adventures. <br></br>
           Each one will be a little piece of my journey!</p>

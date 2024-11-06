@@ -1,7 +1,3 @@
-import { mexico } from './mexico';
-
-const projects = {
-  mexico
-};
+const projects = {};
 
 export { projects };

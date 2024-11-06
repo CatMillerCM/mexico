@@ -6,7 +6,6 @@ const myCountries = [
   'guatemala',
   'costa rica',
   'brazil',
-  'united kingdom',
 ]
 
 export { currentCountry, myCountries };

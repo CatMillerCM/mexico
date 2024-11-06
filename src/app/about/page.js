@@ -36,7 +36,7 @@ const Page = () => {
         <p>When I’ve completed a country (both geographically and technologically!), I’ll upload it to the respective country carousel card and page. <br></br>
           In addition to hosting the app so you can have a real play, I’ll also share some of my highlights from that location, my key inspirations, and, if you’re lucky, some photos as well!</p>
         <p>I hope you all enjoy my silly creations likely conjured up in airport gates, ferry terminals, hostel rooms, on overnight bus journeys, and maybe even when swinging in a tranquil hammock on a beach…</p>
-        <p>If you have any ideas or improvements for <span className={styles.span}>What’s My Country Code?</span> and its spawns, or simply want to connect, please do reach out on any of my socials linked above. <br></br>
+        <p>If you have any ideas or improvements for <span className={styles.span}>What’s My Country Code?</span> and its children, or simply want to connect, please do reach out on any of my socials linked above. <br></br>
         Or, if you’re lucky enough to be my pal, pop me a WhatsApp of course!</p>
         <p>You can also browse all completed country codes on my <Link className={styles.link} href="https://github.com/CatMillerCM" target="_blank"> Github</Link>.</p>
         <p>Thanks so much for coming on this journey with me! <br></br>

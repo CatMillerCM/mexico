@@ -2,7 +2,7 @@
   position: absolute;
   display: flex;
   width: 100dvw;
-  top: var(--plane-top, 34rem);
+  top: var(--plane-top, 65vh);
   justify-content: center;
   z-index: 5;
   margin-top: -0.5rem;
@@ -21,27 +21,27 @@
 
 @keyframes entry-trail {
   0% {
-    top: 34rem;
+    top: 65vh;
     transform: rotate(45deg);
   }
 
   15% {
-    top: 31rem;
+    top: calc(65vh - ((65vh - 10rem)/5));
     transform: rotate(33deg);
   }
 
   30% {
-    top: 28rem;
+    top: calc(65vh - (2*(((65vh - 10rem)/5))));
     transform: rotate(22deg);
   }
 
   45% {
-    top: 22rem;
+    top: calc(65vh - (3*(((65vh - 10rem)/5))));
     transform: rotate(10deg);
   }
 
   60% {
-    top: 16rem;
+    top: calc(65vh - (4*(((65vh - 10rem)/5))));
     transform: rotate(22deg);
   }
 
@@ -57,37 +57,33 @@
 }
 
 @media screen and (min-width: 768px) {
-  .planeDiv {
-    top: var(--plane-top, 38rem);
-  }
-
   .plane {
     height: 80px;
   }
 
   @keyframes entry-trail {
     0% {
-      top: 38rem;
+      top: 65vh;
       transform: rotate(45deg);
     }
   
     15% {
-      top: 34.635rem;
+      top: calc(65vh - ((65vh - 11rem)/5));
       transform: rotate(33deg);
     }
   
     30% {
-      top: 31.25rem;
+      top: calc(65vh - (2*(((65vh - 11rem)/5))));
       transform: rotate(22deg);
     }
   
     45% {
-      top: 24.5rem;
+      top: calc(65vh - (3*(((65vh - 11rem)/5))));
       transform: rotate(10deg);
     }
   
     60% {
-      top: 17.75rem;
+      top: calc(65vh - (4*(((65vh - 11rem)/5))));
       transform: rotate(22deg);
     }
   

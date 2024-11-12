@@ -1,9 +1,12 @@
 # Using this template
 
+## Creating repo
+
 - Clone this repo from github or local files
 - Create a new repo on github
-- Point cloned repo to new repo using:
-- Push up changes
+- Point cloned repo to new repo using: `git remote set-url origin [REPO URL]`
+- Push up changes: `git push -u origin main`
+- If the error 'fatal: the remote end hung up unexpectedly' arises, use `git config http.postBuffer 524288000` and try push again
 - Delete test files if not testing
 - Delete this part of readme
 - npm i
@@ -36,7 +39,13 @@ Component.propTypes = {
 export { Component };
 ```
 
+### Hosting
+
+Follow guide at https://callumeddisford.medium.com/deploying-a-next-js-14-app-to-google-cloud-run-c193895f5bd4
+
 # COUNTRY PROJECT
+
+// TO DO - update readme
 
 Welcome to [COUNTRY NAMES]'s project: [PROJECT NAME].
 

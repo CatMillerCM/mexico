@@ -1,30 +1,9 @@
 :root {
   /* Colour Palette */
-  --color-black: #000;
-  --color-white: #fff;
-  --color-electric-aqua: #05DEFF;
-  --color-sunset-orange: #FD9042;
 }
 
 body {
-  color: var(--color-white);
-  background: var(--color-black);
   height: 100%;
   margin: 0;
   overflow-x: hidden;
-}
-
-a {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-h1 {
-  color: var(--color-white);
-  text-shadow: 1px 1px 0 var(--color-sunset-orange);
-}
-
-h2 {
-  color: var(--color-white);
-  text-shadow: 1px 1px 0 var(--color-electric-aqua);
 }

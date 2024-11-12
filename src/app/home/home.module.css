@@ -1,8 +1,0 @@
-.home {
-  height: 100dvh;
-  width: 100dvw;
-  background: radial-gradient(ellipse 80% 80% at 50% 75%, var(--color-electric-aqua) 0%, var(--color-black) 70%);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}

@@ -1,6 +1,46 @@
-# Country Code
+# Using this template
 
-Example Site
+- Clone this repo from github or local files
+- Create a new repo on github
+- Point cloned repo to new repo using:
+- Push up changes
+- Delete test files if not testing
+- Delete this part of readme
+- npm i
+
+## Creating a new component
+
+```
+import PropTypes from 'prop-types';
+import Image from 'next/image';
+import styles from './component.module.css';
+
+const Component = ({ aProp }) => {
+  return (
+    <div className={styles.image}>
+      <Image
+        src={aProp.src}
+        alt={aProp.alt}
+        layout="fill"
+        objectFit="cover"
+        unoptimized
+      />
+    </div>
+  )
+};
+
+Component.propTypes = {
+  aProp: PropTypes.string.isRequired,
+};
+
+export { Component };
+```
+
+# COUNTRY PROJECT
+
+Welcome to [COUNTRY NAMES]'s project: [PROJECT NAME].
+
+[SPIEL]
 
 ## Getting Started
 

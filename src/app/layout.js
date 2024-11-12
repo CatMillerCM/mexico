@@ -8,8 +8,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "What's my country code?",
-  description: "A fun portfolio of coding projects inspired by countries I visit on my travels",
+  title: "",
+  description: "",
   icons: {
     icon: '/favicon.ico'
   },

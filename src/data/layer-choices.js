@@ -5,4 +5,9 @@ const layerChoices = {
   salsa: ['mild', 'spicy', 'extra spicy']
 };
 
-export default layerChoices;
+const layerInfo = {
+  'hard': 'idk some info about another type i cant remmeber the name of',
+  'al pastor': 'Info about this being mexico city...'
+}
+
+export { layerChoices, layerInfo };

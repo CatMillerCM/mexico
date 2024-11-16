@@ -1,25 +1,36 @@
+'use client';
+
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import Image from 'next/image';
+import { layerInfo } from '@/data/layer-choices';
 import styles from './choices-layer.module.css';
 
 const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
+  const [showInfo, setShowInfo] = useState(false);
+  const [chosenChoices, setChosenChoices] = useState([]);
+
   const handleChoice = (choice) => {
     // TODO: tidy this up
-    let newLayer = chosen[layer];
+    let newLayer = chosenChoices;
 
-    if (chosen[layer]?.includes(choice)) {
+    if (chosenChoices.includes(choice)) {
       if (multiple) {
-        const indexOfRemovedChoice = chosen[layer]?.indexOf(choice);
-        const clone = chosen[layer];
+        const indexOfRemovedChoice = chosenChoices.indexOf(choice);
+        const clone = chosenChoices;
         clone.splice(indexOfRemovedChoice, 1);
+        setChosenChoices(clone);
         newLayer = clone;
       } else {
+        setChosenChoices([]);
         newLayer = [];
       }
     } else {
-      if (multiple && chosen[layer]?.length > 0) {
-        newLayer = [...chosen[layer], choice];
+      if (multiple && chosenChoices?.length > 0) {
+        setChosenChoices([...chosenChoices, choice]);
+        newLayer = [...chosenChoices, choice];
       } else {
+        setChosenChoices([choice]);
         newLayer = [choice];
       }
     }
@@ -42,7 +53,18 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
       </div>
       <div className={styles.choices}>
         {choices.map((choice) => (
-          <button type="button" key={choice} className={styles.choice} onClick={() => handleChoice(choice)}>{choice}</button>
+          <div key={choice} className={styles.choice}>
+            <button type="button" className={`${styles.choiceButton} ${chosenChoices.includes(choice) ? styles.chosen : ''}`} onClick={() => handleChoice(choice)}>{choice}</button>
+            <div className={styles.info}>
+              {Object.keys(layerInfo).includes(choice) && showInfo &&
+                <div className={styles.infoBox}>
+                  <button type="button" className={styles.close} onClick={() => setShowInfo(false)}>X</button>
+                  <p className={styles.infoText}>{layerInfo[choice]}</p>
+                </div>
+              }
+              {Object.keys(layerInfo).includes(choice) && <button type="button" className={styles.questionMark} onClick={() => setShowInfo(true)}>?</button>}
+            </div>
+          </div>
         ))}
       </div>
     </div>

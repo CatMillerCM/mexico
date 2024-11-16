@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.taco {
+  height: 20rem;
+  width: 20rem;
+  border: 2px solid red;
+}
+
+.confirm button {
+  height: 3rem;
+  width: 10rem;
+}

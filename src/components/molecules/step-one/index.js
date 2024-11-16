@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Image from 'next/image';
-import styles from './step-one.module.css';
+import styles from '../steps.module.css';
 
 const StepOne = ({ setStepOneChoice }) => {
   return (

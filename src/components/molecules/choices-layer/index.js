@@ -2,10 +2,11 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import styles from './choices-layer.module.css';
 
-const Layer = ({ layer, choices, chosen, setChosen, multiple }) => {
+const Layer = ({ layer, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
   const handleChoice = (choice) => {
     const newLayer = multiple ? [chosen[layer], ...choice] : choice;
     setChosen({...chosen, [layer]: newLayer});
+    setDisableConfirm(false);
   };
 
   return (
@@ -29,6 +30,7 @@ Layer.propTypes = {
   choices: PropTypes.array.isRequired,
   chosen: PropTypes.object.isRequired,
   setChosen: PropTypes.func.isRequired,
+  setDisableConfirm: PropTypes.func.isRequired,
   multiple: PropTypes.bool
 };
 

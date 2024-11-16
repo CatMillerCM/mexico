@@ -3,6 +3,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Image from 'next/image';
+import { StepTitles } from '@/components/atoms/step-titles';
 import { layerInfo } from '@/data/layer-choices';
 import styles from './choices-layer.module.css';
 
@@ -46,11 +47,7 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
 
   return (
     <div className={styles.main}>
-      <div className={styles.titles}>
-        <h2>Step {step}</h2>
-        <h3>{layer} Layer</h3>
-        <h4>Choose your {layer}:</h4>
-      </div>
+      <StepTitles layer={layer} step={step}/>
       <div className={styles.choices}>
         {choices.map((choice) => (
           <div key={choice} className={styles.choice}>

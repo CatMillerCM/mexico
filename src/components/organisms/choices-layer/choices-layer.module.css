@@ -4,16 +4,6 @@
   gap: 1rem;
 }
 
-.titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titles * {
-  margin: 0;
-}
-
 .choices {
   display: flex;
   gap: 1rem;

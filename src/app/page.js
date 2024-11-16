@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Layer } from '@/components/molecules/choices-layer';
+import { Layer } from '@/components/organisms/choices-layer';
 import { layerChoices } from '@/data/layer-choices';
 import styles from './page.module.css';
 

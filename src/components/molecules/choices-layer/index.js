@@ -4,9 +4,33 @@ import styles from './choices-layer.module.css';
 
 const Layer = ({ layer, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
   const handleChoice = (choice) => {
-    const newLayer = multiple ? [chosen[layer], ...choice] : choice;
+    // TODO: tidy this up
+    let newLayer = chosen[layer];
+
+    if (chosen[layer]?.includes(choice)) {
+      if (multiple) {
+        const indexOfRemovedChoice = chosen[layer]?.indexOf(choice);
+        const clone = chosen[layer];
+        clone.splice(indexOfRemovedChoice, 1);
+        newLayer = clone;
+      } else {
+        newLayer = [];
+      }
+    } else {
+      if (multiple && chosen[layer]?.length > 0) {
+        newLayer = [...chosen[layer], choice];
+      } else {
+        newLayer = [choice];
+      }
+    }
+
     setChosen({...chosen, [layer]: newLayer});
-    setDisableConfirm(false);
+    
+    if (newLayer.length > 0) {
+      setDisableConfirm(false);
+    } else {
+      setDisableConfirm(true);
+    }
   };
 
   return (

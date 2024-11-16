@@ -2,7 +2,12 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import styles from './choices-layer.module.css';
 
-const Layer = ({ layer, choices, chosen, setChosen }) => {
+const Layer = ({ layer, choices, chosen, setChosen, multiple }) => {
+  const handleChoice = (choice) => {
+    const newLayer = multiple ? [chosen[layer], ...choice] : choice;
+    setChosen({...chosen, [layer]: newLayer});
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.titles}>
@@ -12,7 +17,7 @@ const Layer = ({ layer, choices, chosen, setChosen }) => {
       </div>
       <div className={styles.choices}>
       {choices.map((choice) => (
-          <button type="button" key={choice} onClick={() => setChosen({...chosen, [layer]: choice})}>{choice}</button>
+          <button type="button" key={choice} onClick={() => handleChoice(choice)}>{choice}</button>
         ))}
       </div>
     </div>
@@ -24,6 +29,7 @@ Layer.propTypes = {
   choices: PropTypes.array.isRequired,
   chosen: PropTypes.object.isRequired,
   setChosen: PropTypes.func.isRequired,
+  multiple: PropTypes.bool
 };
 
 export { Layer };

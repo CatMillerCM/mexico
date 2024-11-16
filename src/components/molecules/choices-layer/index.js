@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import styles from './choices-layer.module.css';
 
-const Layer = ({ layer, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
+const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
   const handleChoice = (choice) => {
     // TODO: tidy this up
     let newLayer = chosen[layer];
@@ -36,13 +36,13 @@ const Layer = ({ layer, choices, chosen, setChosen, setDisableConfirm, multiple 
   return (
     <div className={styles.main}>
       <div className={styles.titles}>
-        <h2>Step 3</h2>
+        <h2>Step {step}</h2>
         <h3>{layer} Layer</h3>
         <h4>Choose your {layer}:</h4>
       </div>
       <div className={styles.choices}>
-      {choices.map((choice) => (
-          <button type="button" key={choice} onClick={() => handleChoice(choice)}>{choice}</button>
+        {choices.map((choice) => (
+          <button type="button" key={choice} className={styles.choice} onClick={() => handleChoice(choice)}>{choice}</button>
         ))}
       </div>
     </div>
@@ -51,6 +51,7 @@ const Layer = ({ layer, choices, chosen, setChosen, setDisableConfirm, multiple 
 
 Layer.propTypes = {
   layer: PropTypes.string.isRequired,
+  step: PropTypes.number.isRequired,
   choices: PropTypes.array.isRequired,
   chosen: PropTypes.object.isRequired,
   setChosen: PropTypes.func.isRequired,

@@ -6,12 +6,12 @@ import layerChoices from '@/data/layer-choices';
 import styles from './page.module.css';
 
 const Page = () => {
-  const [confirmedStep, setConfirmedStep] = useState(0);
+  const [step, setStep] = useState(0);
   const [disableConfirm, setDisableConfirm] = useState(true);
   const [chosen, setChosen] = useState({});
 
   const handleConfirm = () => {
-    setConfirmedStep((prev) => {
+    setStep((prev) => {
       console.log(prev, prev++, "<<<prev")
       return prev++}
     )
@@ -20,11 +20,16 @@ const Page = () => {
 
   return (
     <main className={styles.main}>
+      {step === 0 &&
+      <div className={styles.entry}>
+        <button type="button" onClick={handleConfirm}>Let's Go!</button>
+      </div>
+      }
       <div className={styles.steps}>
-        {confirmedStep === 0 && <Layer layer="base" choices={layerChoices.base} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm}/>}
-        {confirmedStep === 1 && <Layer layer="protein" choices={layerChoices.protein} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple/>}
-        {confirmedStep === 2 && <Layer layer="vegetable" choices={layerChoices.vegetable} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple/>}
-        {confirmedStep === 3 && <Layer layer="salsa" choices={layerChoices.salsa} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm}/>}
+        {step === 1 && <Layer layer="base" step={step} choices={layerChoices.base} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm}/>}
+        {step === 2 && <Layer layer="protein" step={step} choices={layerChoices.protein} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple/>}
+        {step === 3 && <Layer layer="vegetable" step={step} choices={layerChoices.vegetable} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple/>}
+        {step === 4 && <Layer layer="salsa" step={step} choices={layerChoices.salsa} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm}/>}
       </div>
       <div className={styles.taco}>
         <p>{chosen.base}</p>
@@ -35,6 +40,12 @@ const Page = () => {
       <div className={styles.confirm}>
         <button type="button" onClick={handleConfirm} disabled={disableConfirm}>Confirm choice</button>
       </div>
+      {step === 5 &&
+      <div className={styles.finish}>
+        <p>COMPLETE!</p>
+        <button type="button" onClick={() => setStep(0)}>Another one!</button>
+      </div>
+      }
     </main>
   );
 }

@@ -1,37 +1,18 @@
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  width: 55dvw;
+  padding: 2rem;
+  border: solid 6px var(--color-tomato-red);
+  border-radius: 20px;
+  outline: dotted 6px var(--color-lettuce-green);
+  outline-offset: 2px;
+  background-color: var(--color-corn-yellow);
+  text-align: center;
 }
 
-.entry, .finish {
-  width: 100dvw;
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.entry button {
-  width: 10rem;
-  cursor: pointer;
-}
-
-.taco {
-  height: 20rem;
-  width: 20rem;
-  border: 2px solid red;
-}
-
-.confirm button {
-  height: 3rem;
-  width: 10rem;
-  cursor: pointer;
-}
-
-.finish {
-  position: absolute;
-  background-color: white;
+.taco img {
+  height: 100%;
+  width: 100%;
 }

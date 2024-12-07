@@ -1,0 +1,29 @@
+.button {
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  background-color: var(--color-tomato-red);
+  color: var(--color-corn-yellow);
+  border: dotted 2px  var(--color-corn-yellow);
+  font-size: 1.15rem;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.button:disabled {
+  background-color: var(--color-muted-tomato-red);
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

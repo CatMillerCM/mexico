@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Image from 'next/image';
 import { StepTitles } from '@/components/atoms/step-titles';
+import { ChoiceInfo } from '@/components/molecules/choice-info';
 import { layerInfo } from '@/data/layer-choices';
 import styles from './choices-layer.module.css';
 
@@ -52,15 +53,7 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
         {choices.map((choice) => (
           <div key={choice} className={styles.choice}>
             <button type="button" className={`${styles.choiceButton} ${chosenChoices.includes(choice) ? styles.chosen : ''}`} onClick={() => handleChoice(choice)}>{choice}</button>
-            <div className={styles.info}>
-              {Object.keys(layerInfo).includes(choice) && showInfo &&
-                <div className={styles.infoBox}>
-                  <button type="button" className={styles.close} onClick={() => setShowInfo(false)}>X</button>
-                  <p className={styles.infoText}>{layerInfo[choice]}</p>
-                </div>
-              }
-              {Object.keys(layerInfo).includes(choice) && <button type="button" className={styles.questionMark} onClick={() => setShowInfo(true)}>?</button>}
-            </div>
+            {Object.keys(layerInfo).includes(choice) && <ChoiceInfo choice={choice}/>}
           </div>
         ))}
       </div>

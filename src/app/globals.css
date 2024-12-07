@@ -1,9 +1,19 @@
 :root {
   /* Colour Palette */
+  --color-tomato-red: red;
+  --color-lettuce-green: green;
+  --color-taco-beige: rgb(255, 206, 115);
+  --color-corn-yellow: rgb(255, 252, 160);
+  --color-muted-tomato-red: rgb(160, 120, 120);
 }
 
 body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background-color: var(--color-taco-beige);
 }

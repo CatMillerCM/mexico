@@ -1,11 +1,12 @@
-// import { Montserrat } from "next/font/google";
+import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
-// const montserrat = Montserrat({
-//   subsets: ['latin'],
-//   weight: ['400', '700'],
-// });
+const pressStart2 = Press_Start_2P({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
+//to do
 export const metadata = {
   title: "",
   description: "",
@@ -17,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={pressStart2.className}>
         {children}
       </body>
     </html>

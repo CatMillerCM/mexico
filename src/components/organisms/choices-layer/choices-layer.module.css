@@ -19,8 +19,10 @@
 .choiceButton {
   cursor: pointer;
   width: 6rem;
-  height: 6rem;
+  height: 3rem;
   border: 2px solid var(--color-avocado-green);
+  font-family: unset;
+  font-size: 0.6rem;
 }
 
 .chosen {

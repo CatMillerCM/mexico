@@ -24,6 +24,7 @@
   border-radius: 10px;
   padding: 0.5rem;
   background-color: var(--color-lettuce-green);
+  font-size: 0.5rem;
 }
 
 .close {

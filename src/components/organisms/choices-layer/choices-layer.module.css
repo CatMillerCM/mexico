@@ -7,17 +7,20 @@
 .choices {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .choice {
   display: flex;
+  justify-content: flex-end;
 }
 
 .choiceButton {
   cursor: pointer;
   width: 6rem;
   height: 6rem;
-  border: 2px solid var(--color-lettuce-green);
+  border: 2px solid var(--color-avocado-green);
 }
 
 .chosen {

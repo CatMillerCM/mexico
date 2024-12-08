@@ -1,10 +1,11 @@
 :root {
   /* Colour Palette */
   --color-tomato-red: red;
-  --color-lettuce-green: green;
+  --color-lettuce-green: rgb(223, 254, 130);
   --color-taco-beige: rgb(255, 206, 115);
   --color-corn-yellow: rgb(255, 252, 160);
   --color-muted-tomato-red: rgb(160, 120, 120);
+  --color-avocado-green: green;
 }
 
 body {

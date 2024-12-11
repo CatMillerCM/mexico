@@ -2,10 +2,9 @@
 
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { layerInfo } from '@/data/layer-choices';
 import styles from './choices-info.module.css';
 
-const ChoiceInfo = ({ choice }) => {
+const ChoiceInfo = ({ info }) => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
@@ -13,7 +12,7 @@ const ChoiceInfo = ({ choice }) => {
       {showInfo &&
         <div className={styles.infoBox}>
           <button type="button" className={styles.close} onClick={() => setShowInfo(false)}>X</button>
-          <p className={styles.infoText}>{layerInfo[choice]}</p>
+          <p className={styles.infoText}>{info}</p>
         </div>
       }
       <button type="button" className={styles.questionMark} onClick={() => setShowInfo(true)}>?</button>
@@ -22,7 +21,7 @@ const ChoiceInfo = ({ choice }) => {
 };
 
 ChoiceInfo.propTypes = {
-  choice: PropTypes.string.isRequired
+  info: PropTypes.string.isRequired
 };
 
 export { ChoiceInfo };

@@ -23,8 +23,9 @@
   border: 2px solid var(--color-avocado-green);
   font-family: unset;
   font-size: 0.6rem;
+  background-color: var(--color-taco-beige);
 }
 
 .chosen {
-  background-color: var(--color-taco-beige);
+  background-color: var(--color-lettuce-green);
 }

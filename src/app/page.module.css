@@ -16,9 +16,53 @@
   justify-content: center;
 }
 
+.tacoImages {
+  display: flex;
+  justify-content: center;
+}
+
+.tacoImages img {
+  width: 5rem;
+  height: auto;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+.taco {
+  max-width: 100%;
+  height: 100%;
+  max-height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .taco img {
     max-width: 100%;
     height: auto;
     max-height: 15rem;
     object-fit: contain;
+    position: relative;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }

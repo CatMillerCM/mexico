@@ -16,7 +16,7 @@
 .infoBox {
   position: absolute;
   bottom: -30%;
-  right: -2rem;
+  right: -1.6rem;
   display: flex;
   flex-direction: column;
   width: 9rem;

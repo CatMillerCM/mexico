@@ -1,8 +1,6 @@
 .button {
   height: 2.5rem;
   max-width: 15rem;
-  align-self: center;
-  margin-top: 0.5rem;
   border-radius: 8px;
   background-color: var(--color-tomato-red);
   color: var(--color-corn-yellow);
@@ -10,6 +8,7 @@
   animation: pulse 1s ease-in-out infinite;
   font-family: unset;
   cursor: pointer;
+  align-self: center;
 }
 
 .button:disabled {

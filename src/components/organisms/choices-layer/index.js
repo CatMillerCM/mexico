@@ -3,7 +3,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { StepTitles } from '@/components/atoms/step-titles';
-import { ChoiceInfo } from '@/components/molecules/choice-info';
+import { ChoiceButton } from '@/components/molecules/choice-button';
 import styles from './choices-layer.module.css';
 
 
@@ -14,7 +14,7 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
 
   const handleChoice = (choice) => {
     // TODO: tidy this up
-    let newLayer = chosenChoices;g
+    let newLayer = chosenChoices;
 
     if (choice === 'Ninguno') {
       if (chosenChoices.includes(choice)) {
@@ -64,15 +64,9 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
   return (
     <div className={styles.main}>
       <StepTitles layer={layer} step={step}/>
-      <div className={styles.choices}>
+      <div className={`${styles.choices} ${choices.length < 4 ? styles.stacked : ''}`}>
         {choices.map((choice) => (
-          <div key={choice.spanish} className={styles.choice}>
-            <button type="button" className={`${styles.choiceButton} ${chosenChoices.includes(choice.spanish) ? styles.chosen : ''}`} onClick={() => handleChoice(choice.spanish)}>
-              {choice.spanish}
-              {choice.english}
-            </button>
-            {choice.info && <ChoiceInfo info={choice.info}/>}
-          </div>
+          <ChoiceButton choice={choice} chosenChoices={chosenChoices} handleChoice={handleChoice}/>
         ))}
       </div>
     </div>

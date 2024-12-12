@@ -1,0 +1,28 @@
+.choice {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.choiceButton {
+  cursor: pointer;
+  width: 7.5rem;
+  height: 4rem;
+  border: 2px solid var(--color-avocado-green);
+  font-family: unset;
+  background-color: var(--color-taco-beige);
+  overflow: hidden;
+}
+
+.chosen {
+  background-color: var(--color-lettuce-green);
+}
+
+.spanishText {
+  color: var(--color-avocado-green);
+  font-size: 0.7rem;
+}
+
+.englishText {
+  color: var(--color-tomato-red);
+  font-size: 0.5rem;
+}

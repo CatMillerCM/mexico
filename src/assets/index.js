@@ -8,6 +8,7 @@ import cremaMexicana from './crema-mexicana.png';
 import habanero from './habanero.png';
 import jalapenos from './jalapenos.png';
 import lechuga from './lechuga.png';
+import lime from './lime.png';
 import mole from './mole.png';
 import nopales from './nopales.png';
 import picoDeGallo from './pico-de-gallo.png';
@@ -37,6 +38,7 @@ export {
   habanero,
   jalapenos,
   lechuga,
+  lime,
   mole,
   nopales,
   picoDeGallo,

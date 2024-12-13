@@ -10,7 +10,7 @@ const Start = ({ handleConfirm }) => {
       <h1 className={styles.title}>TACO BUILDER</h1>
       <DancingTacos/>
       <div className={styles.intro}>
-        <p>Inspired by the numerous taco stalls across Mexico, this mini project pays homage to all the various flavours across different states.</p>
+        <p>Inspired by the numerous taco stalls we came across around Mexico, this mini project pays homage to all the various flavours found in different states.</p>
         <p>Enjoy building up your favourite flavours, or try something new!</p>
       </div>
       <Button onClick={handleConfirm} label="Create my taco"/>

@@ -18,11 +18,11 @@
 }
 
 .main img {
-    max-width: 100%;
-    height: auto;
-    max-height: 15rem;
-    object-fit: contain;
-    position: relative;
+  max-width: 100%;
+  height: auto;
+  max-height: 15rem;
+  object-fit: contain;
+  position: relative;
 }
 
 @keyframes spin {

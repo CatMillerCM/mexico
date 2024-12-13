@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import { ChoiceInfo } from '@/components/molecules/choice-info';
 import styles from './choice-button.module.css';
 
-const ChoiceButton = ({ choice, chosenChoices, handleChoice }) => {
+const ChoiceButton = ({ layer, choice, chosen, handleChoice }) => {
   return (
     <div key={choice.spanish} className={styles.choice}>
-      <button type="button" className={`${styles.choiceButton} ${chosenChoices.includes(choice.spanish) ? styles.chosen : ''}`} onClick={() => handleChoice(choice.spanish)}>
+      <button type="button" className={`${styles.choiceButton} ${chosen[layer]?.includes(choice.spanish) ? styles.chosen : ''}`} onClick={() => handleChoice(choice.spanish)}>
         <span className={styles.spanishText}>{choice.spanish}</span>
         <br/>
         <span className={styles.englishText}>{choice.english}</span>
@@ -16,8 +16,9 @@ const ChoiceButton = ({ choice, chosenChoices, handleChoice }) => {
 };
 
 ChoiceButton.propTypes = {
+  layer: PropTypes.string.isRequired,
   choice: PropTypes.string.isRequired,
-  chosenChoices: PropTypes.array.isRequired,
+  chosen: PropTypes.object.isRequired,
   handleChoice: PropTypes.func.isRequired
 };
 

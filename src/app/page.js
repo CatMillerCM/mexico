@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Layer } from '@/components/organisms/choices-layer';
-import { Button } from '@/components/atoms/button';
+import { SubmitButton } from '@/components/atoms/submit-button';
 import { Taco } from '@/components/atoms/taco';
 import { layerChoices, multipleOptionLayers } from '@/data/layer-choices';
 import styles from './page.module.css';
@@ -15,7 +15,10 @@ const Page = () => {
   const [chosen, setChosen] = useState({});
 
   const handleConfirm = () => {
-    setStep(prev => prev++);
+    setStep((prev) => {
+      prev++;
+      return prev++;
+    });
     setDisableConfirm(true);
   };
 
@@ -39,12 +42,12 @@ const Page = () => {
     <main className={styles.main}>
       {Object.keys(layerChoices).map((layerName, index) => {
         return step === index + 1 && (
-          <Layer layer={layerName} step={step} choices={layerChoices[layerName]} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple={multipleOptionLayers.includes(layerName)}/>
+          <Layer layer={layerName} step={step} setStep={setStep} choices={layerChoices[layerName]} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple={multipleOptionLayers.includes(layerName)}/>
         )
       })}
       <Taco chosen={chosen}/>
       <div>
-        <Button onClick={handleConfirm} label="Confirm choice" disabled={disableConfirm}/>
+        <SubmitButton onClick={handleConfirm} label="Confirm choice" disabled={disableConfirm}/>
       </div>
     </main>
   );

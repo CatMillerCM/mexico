@@ -1,0 +1,11 @@
+.button {
+  width: 3.5rem;
+  height: 1.5rem;
+  background-color: var(--color-avocado-green);
+  border: none;
+  border-radius: 10px;
+  font-family: unset;
+  font-size: 0.6rem;
+  position: absolute;
+  margin: -1rem 0;
+}

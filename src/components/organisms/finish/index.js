@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Taco } from '@/components/atoms/taco';
-import { Button } from '@/components/atoms/button';
+import { SubmitButton } from '@/components/atoms/submit-button';
 import styles from './finish.module.css';
 
 const Finish = ({ chosen, setChosen, setStep }) => {
@@ -14,7 +14,7 @@ const Finish = ({ chosen, setChosen, setStep }) => {
       <h2 className={styles.complete}>Taco complete!</h2>
       <Taco chosen={chosen} isFinal/>
       <p className={styles.hungry}>I'm still hungry...</p>
-      <Button onClick={handleNewTaco} label="Make another one!" />
+      <SubmitButton onClick={handleNewTaco} label="Make another one!" />
     </>
   )
 };

@@ -3,13 +3,14 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { StepTitles } from '@/components/atoms/step-titles';
+import { BackButton } from '@/components/atoms/back-button';
 import { ChoiceButton } from '@/components/molecules/choice-button';
 import styles from './choices-layer.module.css';
 
 
 // to do - move choices button to atom
 // to do - if none is picked, untick everything
-const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
+const Layer = ({ layer, step, setStep, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
   const [chosenChoices, setChosenChoices] = useState([]);
 
   const handleChoice = (choice) => {
@@ -63,6 +64,7 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
 
   return (
     <div className={styles.main}>
+      <BackButton setStep={setStep} chosen={chosen} layer={layer}/>
       <StepTitles layer={layer} step={step} multiple={multiple}/>
       <div className={`${styles.choices} ${choices.length < 4 ? styles.stacked : ''}`}>
         {choices.map((choice) => (
@@ -76,6 +78,7 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
 Layer.propTypes = {
   layer: PropTypes.string.isRequired,
   step: PropTypes.number.isRequired,
+  setStep: PropTypes.func.isRequired,
   choices: PropTypes.array.isRequired,
   chosen: PropTypes.object.isRequired,
   setChosen: PropTypes.func.isRequired,

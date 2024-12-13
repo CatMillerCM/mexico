@@ -11,7 +11,7 @@
   outline: dotted 6px var(--color-avocado-green);
   outline-offset: 2px;
   text-align: center;
-  overflow: scroll;
+  overflow: hidden;
   justify-content: center;
 }
 

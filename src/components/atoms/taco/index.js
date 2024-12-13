@@ -10,6 +10,7 @@ const Taco = ({ chosen, isFinal = false }) => {
       return chosen[key] && chosen[key][0] !== 'Ninguno' && chosen[key].map((choice) => {
         return (
           <Image
+            key={choice}
             src={layerImages[choice].src}
             alt={choice}
             layout="fill"

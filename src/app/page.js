@@ -42,7 +42,7 @@ const Page = () => {
     <main className={styles.main}>
       {Object.keys(layerChoices).map((layerName, index) => {
         return step === index + 1 && (
-          <Layer layer={layerName} step={step} setStep={setStep} choices={layerChoices[layerName]} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple={multipleOptionLayers.includes(layerName)}/>
+          <Layer key={layerName} layer={layerName} step={step} setStep={setStep} choices={layerChoices[layerName]} chosen={chosen} setChosen={setChosen} setDisableConfirm={setDisableConfirm} multiple={multipleOptionLayers.includes(layerName)}/>
         )
       })}
       <Taco chosen={chosen}/>

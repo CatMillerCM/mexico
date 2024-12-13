@@ -63,7 +63,7 @@ const Layer = ({ layer, step, choices, chosen, setChosen, setDisableConfirm, mul
 
   return (
     <div className={styles.main}>
-      <StepTitles layer={layer} step={step}/>
+      <StepTitles layer={layer} step={step} multiple={multiple}/>
       <div className={`${styles.choices} ${choices.length < 4 ? styles.stacked : ''}`}>
         {choices.map((choice) => (
           <ChoiceButton choice={choice} chosenChoices={chosenChoices} handleChoice={handleChoice}/>

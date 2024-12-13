@@ -16,3 +16,13 @@
 .stacked {
   flex-direction: column;
 }
+
+@media screen and (min-width: 768px) {
+  .choices {
+    height: 4rem;
+  }
+
+  .stacked {
+    flex-direction: row;
+  }  
+}

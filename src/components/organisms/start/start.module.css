@@ -1,3 +1,11 @@
+.welcome {
+  color: var(--color-avocado-green);
+}
+
+.title {
+  color: var(--color-corn-yellow);
+}
+
 .intro {
   font-size: 0.8rem;
 }

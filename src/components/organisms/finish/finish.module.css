@@ -1,0 +1,8 @@
+.complete {
+  color: var(--color-corn-yellow);
+}
+
+.hungry {
+  color: var(--color-avocado-green);
+  font-size: 0.75rem;
+}

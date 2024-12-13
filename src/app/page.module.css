@@ -10,12 +10,7 @@
   border-radius: 20px;
   outline: dotted 6px var(--color-avocado-green);
   outline-offset: 2px;
-  background-color: var(--color-corn-yellow);
   text-align: center;
   overflow: scroll;
   justify-content: center;
-}
-
-.main h3, .main h1 {
-  margin: 0;
 }

@@ -7,9 +7,9 @@
   cursor: pointer;
   width: 7.5rem;
   height: 4rem;
-  border: 2px solid var(--color-avocado-green);
+  border: 2px solid var(--color-lettuce-green);
   font-family: unset;
-  background-color: var(--color-taco-beige);
+  background-color: var(--color-black);
   overflow: hidden;
 }
 
@@ -18,11 +18,11 @@
 }
 
 .spanishText {
-  color: var(--color-avocado-green);
+  color: var(--color-tomato-red);
   font-size: 0.7rem;
 }
 
 .englishText {
-  color: var(--color-tomato-red);
+  color: var(--color-avocado-green);
   font-size: 0.5rem;
 }

@@ -1,11 +1,12 @@
 :root {
   /* Colour Palette */
-  --color-tomato-red: red;
-  --color-lettuce-green: rgb(223, 254, 130);
-  --color-taco-beige: rgb(255, 206, 115);
-  --color-corn-yellow: rgb(255, 252, 160);
-  --color-muted-tomato-red: rgb(160, 120, 120);
-  --color-avocado-green: green;
+  --color-tomato-red: #ff0000;
+  --color-lettuce-green: #dffe82;
+  --color-taco-beige: #ffce73;
+  --color-corn-yellow: #fffca0;
+  --color-muted-tomato-red: #a07878;
+  --color-avocado-green: #008000;
+  --color-black: #000000;
 }
 
 body {
@@ -16,5 +17,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100dvh;
-  background-color: var(--color-taco-beige);
+  background-color: var(--color-black);
+  color: var(--color-taco-beige);
 }
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+

@@ -4,16 +4,18 @@
   align-items: center;
 }
 
-.main * {
-  margin: 0;
+.stepNumber {
+  color: var(--color-avocado-green);
 }
 
-.main h4 {
+.layerName {
   text-transform: capitalize;
   margin: 0.5rem 0 1rem;
+  color: var(--color-corn-yellow);
+  font-size: 1rem;
 }
 
-.main p {
+.choose {
   font-size: 0.7rem;
-  color: var(--color-tomato-red);
+  margin: 0;
 }

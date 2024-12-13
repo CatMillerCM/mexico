@@ -15,10 +15,7 @@ const Page = () => {
   const [chosen, setChosen] = useState({});
 
   const handleConfirm = () => {
-    setStep((prev) => {
-      console.log(prev, prev++, "<<<prev")
-      return prev++}
-    )
+    setStep(prev => prev++);
     setDisableConfirm(true);
   };
 

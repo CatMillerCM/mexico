@@ -6,8 +6,8 @@ import styles from './start.module.css';
 const Start = ({ handleConfirm }) => {
   return (
     <>
-      <h3>Welcome to</h3>
-      <h1>TACO BUILDER</h1>
+      <h3 className={styles.welcome}>Welcome to</h3>
+      <h1 className={styles.title}>TACO BUILDER</h1>
       <DancingTacos/>
       <div className={styles.intro}>
         <p>Inspired by the numerous taco stalls across Mexico, this mini project pays homage to all the various flavours across different states.</p>

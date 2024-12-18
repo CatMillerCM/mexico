@@ -2,11 +2,12 @@
   width: 3.5rem;
   height: 1.5rem;
   background-color: var(--color-avocado-green);
+  color: var(--color-black);
   border: none;
   border-radius: 10px;
   font-family: unset;
   font-size: 0.6rem;
   position: absolute;
-  top: 9vh;
+  top: 8vh;
   cursor: pointer;
 }

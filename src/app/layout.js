@@ -6,10 +6,9 @@ const pressStart2 = Press_Start_2P({
   weight: ['400'],
 });
 
-//to do
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Bit-By-Bit Taco Builder",
+  description: "Build your own taco using this fun, 8-bit style app that's inspired by flavours across México",
   icons: {
     icon: '/favicon.ico'
   },

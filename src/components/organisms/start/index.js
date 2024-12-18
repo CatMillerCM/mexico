@@ -7,10 +7,10 @@ const Start = ({ handleConfirm }) => {
   return (
     <>
       <h3 className={styles.welcome}>Welcome to</h3>
-      <h1 className={styles.title}>TACO BUILDER</h1>
+      <h1 className={styles.title}>BIT-BY-BIT TACO BUILDER</h1>
       <DancingTacos/>
       <div className={styles.intro}>
-        <p>Inspired by the numerous taco stalls we came across around Mexico, this mini project pays homage to all the various flavours found in different states.</p>
+        <p>Inspired by the numerous taco stalls we came across around México, this 8-bit style mini project pays homage to all the various flavours found in different states.</p>
         <p>Enjoy building up your favourite flavours, or try something new!</p>
       </div>
       <SubmitButton onClick={handleConfirm} label="Create my taco"/>

@@ -19,6 +19,12 @@
 
 @media screen and (min-width: 768px) {
   .choices {
+    height: 8.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .choices {
     height: 4rem;
   }
 

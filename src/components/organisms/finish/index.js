@@ -16,7 +16,7 @@ const Finish = ({ chosen, setChosen, setStep }) => {
       <h2 className={styles.complete}>Taco complete!</h2>
       <Taco chosen={chosen} isFinal/>
         <div className={styles.lime}>
-          <Image src={lime} alt="lime" unoptimized/>
+          <Image src={lime} alt="lime"/>
         </div>
       <p className={styles.hungry}>I&apos;m still hungry...</p>
       <SubmitButton onClick={handleNewTaco} label="Make another one!" />

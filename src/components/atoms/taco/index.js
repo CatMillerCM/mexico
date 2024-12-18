@@ -14,7 +14,6 @@ const Taco = ({ chosen, isFinal = false }) => {
             src={layerImages[choice].src}
             alt={choice}
             layout="fill"
-            unoptimized
           />
         )
       })

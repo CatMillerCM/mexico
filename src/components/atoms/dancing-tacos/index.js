@@ -5,9 +5,9 @@ import styles from './dancing-tacos.module.css';
 const DancingTacos = () => {
   return (
     <div className={styles.tacoImages}>
-      <Image src={taco} alt="taco" unoptimized/>
-      <Image src={taco} alt="taco" unoptimized/>
-      <Image src={taco} alt="taco" unoptimized/>
+      <Image src={taco} alt="taco"/>
+      <Image src={taco} alt="taco"/>
+      <Image src={taco} alt="taco"/>
     </div>
   )
 };

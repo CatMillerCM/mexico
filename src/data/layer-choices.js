@@ -26,7 +26,7 @@ import {
   tostada,
   tortillaDeHarina,
   tortillaDeMaiz
-} from "@/assets";
+} from '@/assets';
 
 const layerChoices = {
   base: [

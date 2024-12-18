@@ -11,52 +11,26 @@ const Layer = ({ layer, step, setStep, choices, chosen, setChosen, setDisableCon
   const [chosenChoices, setChosenChoices] = useState([]);
 
   const handleChoice = (choice) => {
-    let newLayer = chosenChoices;
-
+    let newLayer = [];
+  
     if (choice === 'Ninguno') {
-      if (chosenChoices.includes(choice)) {
-        setChosenChoices([]);
-        newLayer = [];
+      newLayer = chosenChoices.includes(choice) ? [] : [choice];
+    } else if (chosenChoices.includes(choice)) {
+      if (multiple) {
+        newLayer = chosenChoices.filter((item) => item !== choice);
+      }
+    } else {
+      if (multiple && chosenChoices.length > 0) {
+        newLayer = chosenChoices.includes('Ninguno') ? [choice] : [...chosenChoices, choice];
       } else {
-        setChosenChoices([choice]);
         newLayer = [choice];
       }
-    } else {
-      if (chosenChoices.includes(choice)) {
-        if (multiple) {
-          const indexOfRemovedChoice = chosenChoices.indexOf(choice);
-          const clone = chosenChoices;
-          clone.splice(indexOfRemovedChoice, 1);
-          setChosenChoices(clone);
-          newLayer = clone;
-        } else {
-          setChosenChoices([]);
-          newLayer = [];
-        }
-      } else {
-        if (multiple && chosenChoices?.length > 0) {
-          if (chosenChoices.includes ('Ninguno')) {
-            setChosenChoices([choice]);
-            newLayer = [choice];
-          } else {
-            setChosenChoices([...chosenChoices, choice]);
-            newLayer = [...chosenChoices, choice];
-          }
-        } else {
-          setChosenChoices([choice]);
-          newLayer = [choice];
-        }
-      }
     }
-
-    setChosen({...chosen, [layer]: newLayer});
-    
-    if (newLayer.length > 0) {
-      setDisableConfirm(false);
-    } else {
-      setDisableConfirm(true);
-    }
-  };
+  
+    setChosenChoices(newLayer);
+    setChosen({ ...chosen, [layer]: newLayer });
+    setDisableConfirm(newLayer.length === 0);
+  };  
 
   return (
     <div className={styles.main}>

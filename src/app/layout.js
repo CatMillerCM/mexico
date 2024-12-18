@@ -1,5 +1,5 @@
-import { Press_Start_2P } from "next/font/google";
-import "./globals.css";
+import { Press_Start_2P } from 'next/font/google';
+import './globals.css';
 
 const pressStart2 = Press_Start_2P({
   subsets: ['latin'],
@@ -8,9 +8,9 @@ const pressStart2 = Press_Start_2P({
 
 export const metadata = {
   title: "Bit-By-Bit Taco Builder",
-  description: "Build your own taco using this fun, 8-bit style app that's inspired by flavours across México",
+  description: "Build your own taco using this fun, 8-bit style app that's inspired by flavours across México.",
   icons: {
-    icon: '/favicon.ico'
+    icon: "/favicon.ico"
   },
 };
 

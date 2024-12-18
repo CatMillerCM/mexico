@@ -1,68 +1,14 @@
-# Using this template
+# MEXICO PROJECT
 
-## Creating repo
+Welcome to Mexico's project: Bit-By-Bit Taco Builder.
 
-- Clone this repo from github or local files
-- Create a new repo on github
-- Point cloned repo to new repo using: `git remote set-url origin [REPO URL]`
-- Push up changes: `git push -u origin main`
-- If the error 'fatal: the remote end hung up unexpectedly' arises, use `git config http.postBuffer 524288000` and try push again
-- Delete test files if not testing
-- Delete this part of readme
-- npm i
+This project is part of [What's My Country Code](https://whatsmycountrycode.cat-miller.com/), a portfolio of mini-apps I am creating inspired by each country in Latin America I visit on my travels.
 
-## Creating a new component
+Inspired by the numerous taco stalls we came across around México, Bit-By-Bit Taco Builder is an 8-bit style app that pays homage to all the various flavours we found in different states.
 
-```
-import PropTypes from 'prop-types';
-import Image from 'next/image';
-import styles from './component.module.css';
+Enjoy building up your favourite flavours, or try something new!
 
-const Component = ({ aProp }) => {
-  return (
-    <div className={styles.image}>
-      <Image
-        src={aProp.src}
-        alt={aProp.alt}
-        layout="fill"
-        objectFit="cover"
-        unoptimized
-      />
-    </div>
-  )
-};
+A special to [Pixel It](https://giventofly.github.io/pixelit/), a Javascript library that allowed me to pixelate all of the ingredients for each layer.
 
-Component.propTypes = {
-  aProp: PropTypes.string.isRequired,
-};
-
-export { Component };
-```
-
-### Hosting
-
-Follow guide at https://callumeddisford.medium.com/deploying-a-next-js-14-app-to-google-cloud-run-c193895f5bd4
-
-# COUNTRY PROJECT
-
-// TO DO - update readme
-
-Welcome to [COUNTRY NAMES]'s project: [PROJECT NAME].
-
-[SPIEL]
-
-## Getting Started
-
-First, install all the dependencies using
-
-```bash
-npm i
-```
-
-Then run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hosted independently [here](https://mexico.cat-miller.com/).
+A full write up, with further information about the project, can be found on [What's My Country Code - Mexico](https://whatsmycountrycode.cat-miller.com/mexico).

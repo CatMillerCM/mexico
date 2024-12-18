@@ -28,8 +28,6 @@ import {
   tortillaDeMaiz
 } from "@/assets";
 
-const multipleOptionLayers = ['vegetables', 'garnishes'];
-
 const layerChoices = {
   base: [
     {
@@ -210,5 +208,7 @@ const layerImages = {
   'Tortilla de Harina': tortillaDeHarina,
   'Tortilla de Maiz': tortillaDeMaiz
 };
+
+const multipleOptionLayers = ['vegetables', 'garnishes'];
 
 export { layerChoices, layerImages, multipleOptionLayers };

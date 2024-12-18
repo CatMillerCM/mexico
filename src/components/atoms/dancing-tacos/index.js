@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import taco from '@/assets/taco.png';
+import taco from '@/assets';
 import styles from './dancing-tacos.module.css';
 
 const DancingTacos = () => {

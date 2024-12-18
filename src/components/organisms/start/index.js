@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { SubmitButton } from '@/components/atoms/submit-button';
 import { DancingTacos } from '@/components/atoms/dancing-tacos';
+import { SubmitButton } from '@/components/atoms/submit-button';
 import styles from './start.module.css';
 
 const Start = ({ handleConfirm }) => {

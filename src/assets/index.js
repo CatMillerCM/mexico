@@ -22,6 +22,7 @@ import repollo from './repollo.png';
 import salsaRoja from './salsa-roja.png';
 import salsaVerde from './salsa-verde.png';
 import hongos from './hongos.png';
+import taco from './taco.png';
 import tomate from './tomate.png';
 import tostada from './tostada.png';
 import tortillaDeHarina from './tortilla-de-harina.png';
@@ -52,6 +53,7 @@ export {
   salsaRoja,
   salsaVerde,
   hongos,
+  taco,
   tomate,
   tostada,
   tortillaDeHarina,

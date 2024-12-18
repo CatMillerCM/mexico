@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { Layer } from '@/components/organisms/choices-layer';
 import { SubmitButton } from '@/components/atoms/submit-button';
 import { Taco } from '@/components/atoms/taco';
-import { layerChoices, multipleOptionLayers } from '@/data/layer-choices';
-import styles from './page.module.css';
+import { Layer } from '@/components/organisms/choices-layer';
 import { Finish } from '@/components/organisms/finish';
 import { Start } from '@/components/organisms/start';
+import { layerChoices, multipleOptionLayers } from '@/data/layer-choices';
+import styles from './page.module.css';
 
 const Page = () => {
   const [step, setStep] = useState(0);

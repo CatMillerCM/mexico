@@ -2,19 +2,15 @@
 
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { StepTitles } from '@/components/atoms/step-titles';
 import { BackButton } from '@/components/atoms/back-button';
+import { StepTitles } from '@/components/atoms/step-titles';
 import { ChoiceButton } from '@/components/molecules/choice-button';
 import styles from './choices-layer.module.css';
 
-
-// to do - move choices button to atom
-// to do - if none is picked, untick everything
 const Layer = ({ layer, step, setStep, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
   const [chosenChoices, setChosenChoices] = useState([]);
 
   const handleChoice = (choice) => {
-    // TODO: tidy this up
     let newLayer = chosenChoices;
 
     if (choice === 'Ninguno') {

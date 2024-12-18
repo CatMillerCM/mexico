@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import Image from 'next/image';
-import { Taco } from '@/components/atoms/taco';
-import { SubmitButton } from '@/components/atoms/submit-button';
 import { lime } from '@/assets';
+import { SubmitButton } from '@/components/atoms/submit-button';
+import { Taco } from '@/components/atoms/taco';
 import styles from './finish.module.css';
 
 const Finish = ({ chosen, setChosen, setStep }) => {

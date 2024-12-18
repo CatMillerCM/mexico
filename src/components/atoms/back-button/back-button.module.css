@@ -1,13 +1,13 @@
 .button {
-  width: 3.5rem;
-  height: 1.5rem;
-  background-color: var(--color-avocado-green);
-  color: var(--color-black);
-  border: none;
-  border-radius: 10px;
-  font-family: unset;
-  font-size: 0.6rem;
   position: absolute;
   top: 8vh;
+  width: 3.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-avocado-green);
   cursor: pointer;
+  color: var(--color-black);
+  font-family: unset;
+  font-size: 0.6rem;
 }

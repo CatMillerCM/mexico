@@ -4,14 +4,14 @@
 }
 
 .choiceButton {
-  cursor: pointer;
   width: 7.5rem;
   height: 4rem;
   border: 2px solid var(--color-lettuce-green);
-  font-family: unset;
+  border-radius: 10px;
   background-color: var(--color-black);
   overflow: hidden;
-  border-radius: 10px;
+  cursor: pointer;
+  font-family: unset;
 }
 
 .chosen {

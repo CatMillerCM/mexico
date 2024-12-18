@@ -3,13 +3,13 @@
 }
 
 .questionMark {
-  border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
-  cursor: pointer;
+  border: none;
+  border-radius: 50%;
   background-color: var(--color-avocado-green);
   color: var(--color-corn-yellow);
-  border: none;
+  cursor: pointer;
   margin: -0.5rem;
 }
 

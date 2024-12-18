@@ -1,14 +1,14 @@
 .button {
   height: 2.5rem;
   max-width: 15rem;
+  border: dotted 2px var(--color-corn-yellow);
   border-radius: 8px;
   background-color: var(--color-tomato-red);
   color: var(--color-corn-yellow);
-  border: dotted 2px  var(--color-corn-yellow);
-  animation: pulse 1s ease-in-out infinite;
-  font-family: unset;
   cursor: pointer;
+  font-family: unset;
   align-self: center;
+  animation: pulse 1s ease-in-out infinite;
 }
 
 .button:disabled {

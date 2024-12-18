@@ -15,7 +15,6 @@
   margin-left: -50%;
   transform: scale(0) rotate(85deg);
   animation: enter 1s linear forwards 0.5s;
-  /* animation: squeeze 1.5s linear forwards 1s; */
 }
 
 .hungry {
@@ -38,48 +37,3 @@
     transform: scale(1) rotate(85deg);
   }
 }
-
-/* @keyframes squeeze {
-  0% {
-    transform: rotate(100deg);
-    left: 34vw;
-    top: 50vh;
-    width: 6rem;
-    height: auto;
-  }
-
-  25% {
-    transform: rotate(0);
-    left: 46vw;
-    top: 36vh;
-    width: 5rem;
-    height: 2.5rem;
-  }
-
-  50% {
-    transform: rotate(180deg);
-    left: 46vw;
-    top: 36vh;
-    width: 5rem;
-    height: 3.5rem;
-  }
-
-  75% {
-    transform: rotate(0);
-    left: 46vw;
-    top: 36vh;
-    width: 5rem;
-    height: 2.5rem;
-    filter: contrast(1.15) brightness(0.925) drop-shadow(-1px -1px 0px var(--color-corn-yellow))
-  }
-
-  100% {
-    transform: rotate(-75deg);
-    left: 58vw;
-    top: 22vh;
-    width: 5rem;
-    height: 3.5rem;
-    filter: contrast(1.25) brightness(0.85) drop-shadow(-3px -3px 0px var(--color-corn-yellow))
-  }
-} */
-

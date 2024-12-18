@@ -1,7 +1,7 @@
 .main {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .stepNumber {
@@ -9,13 +9,13 @@
 }
 
 .layerName {
-  text-transform: capitalize;
   margin: 0.5rem 0 1rem;
   color: var(--color-corn-yellow);
   font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .choose {
-  font-size: 0.7rem;
   margin: 0;
+  font-size: 0.7rem;
 }

@@ -3,10 +3,7 @@ import styles from './back-button.module.css';
 
 const BackButton = ({ setStep, chosen, layer }) => {
   const handleBack = () => {
-    setStep((prev) => {
-      prev--;
-      return prev--;
-    });
+    setStep((prev) => --prev);
 
     delete chosen[layer];
   };

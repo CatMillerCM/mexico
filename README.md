@@ -8,7 +8,7 @@ Bit-By-Bit Taco Builder is an 8-bit style app that pays homage to all the variou
 
 Enjoy building up your favourite flavours, or try something new!
 
-A special to [Pixel It](https://giventofly.github.io/pixelit/), a Javascript library that allowed me to pixelate all of the ingredients for each layer.
+A special shoutout to [Pixel It](https://giventofly.github.io/pixelit/), a Javascript library that allowed me to pixelate all of the ingredients for each layer.
 
 Hosted independently [here](https://mexico.cat-miller.com/).
 

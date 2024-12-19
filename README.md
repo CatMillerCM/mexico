@@ -1,4 +1,4 @@
-# MEXICO PROJECT
+# Bit-By-Bit Taco Builder
 
 Welcome to Mexico's project: Bit-By-Bit Taco Builder.
 
@@ -11,4 +11,5 @@ Enjoy building up your favourite flavours, or try something new!
 A special to [Pixel It](https://giventofly.github.io/pixelit/), a Javascript library that allowed me to pixelate all of the ingredients for each layer.
 
 Hosted independently [here](https://mexico.cat-miller.com/).
+
 A full write up, with further information about the project, can be found on [What's My Country Code - Mexico](https://whatsmycountrycode.cat-miller.com/mexico).

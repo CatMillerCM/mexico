@@ -2,9 +2,9 @@
 
 Welcome to Mexico's project: Bit-By-Bit Taco Builder.
 
-This project is part of [What's My Country Code](https://whatsmycountrycode.cat-miller.com/), a portfolio of mini-apps I am creating inspired by each country in Latin America I visit on my travels.
+This project is part of [What's My Country Code](https://whatsmycountrycode.cat-miller.com/), a portfolio of mini-apps I am creating that are inspired by each country in Latin America I visit on my travels.
 
-Inspired by the numerous taco stalls we came across around México, Bit-By-Bit Taco Builder is an 8-bit style app that pays homage to all the various flavours we found in different states.
+Bit-By-Bit Taco Builder is an 8-bit style app that pays homage to all the various flavours we found in the different states of Mexico.
 
 Enjoy building up your favourite flavours, or try something new!
 

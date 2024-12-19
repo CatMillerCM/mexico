@@ -1,7 +1,7 @@
 'use client';
 
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BackButton } from '@/components/atoms/back-button';
 import { StepTitles } from '@/components/atoms/step-titles';
 import { ChoiceButton } from '@/components/molecules/choice-button';
@@ -9,6 +9,13 @@ import styles from './choices-layer.module.css';
 
 const Layer = ({ layer, step, setStep, choices, chosen, setChosen, setDisableConfirm, multiple }) => {
   const [chosenChoices, setChosenChoices] = useState([]);
+
+  useEffect(() => {
+    setDisableConfirm(!chosen[layer] || chosen[layer].length === 0);
+    if (chosen[layer]) {
+      setChosenChoices(chosen[layer])
+    }
+  }, [chosen, layer, setDisableConfirm]);
 
   const handleChoice = (choice) => {
     let newLayer = [];
@@ -26,7 +33,7 @@ const Layer = ({ layer, step, setStep, choices, chosen, setChosen, setDisableCon
         newLayer = [choice];
       }
     }
-  
+    
     setChosenChoices(newLayer);
     setChosen({ ...chosen, [layer]: newLayer });
     setDisableConfirm(newLayer.length === 0);

@@ -1,4 +1,5 @@
 import { Press_Start_2P } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 const pressStart2 = Press_Start_2P({
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={pressStart2.className}>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-M59L4308DV" />
     </html>
   );
 };
